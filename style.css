@@ -45,6 +45,7 @@ nav{
     filter: sepia(100%);
     transform: scale(1.1);
 }
+
 .nav-link img{
   transition: 1s;
   
