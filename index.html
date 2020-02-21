@@ -8,14 +8,14 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Akronim|Bungee+Shade|Fontdiner+Swanky|Rye&display=swap"
         rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Monty python</title>
 </head>
 
 <body>
     <!-- banniere -->
-    <section >
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -66,19 +66,23 @@
     <section class="photos">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card text-danger text-center">
-                   <img class="card-img" src="./image/General_FOLDER_1969 GroupPic B&W Trans.jpg" alt="">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title text-center"></h4>
-                            <p class="card-text">
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted"></small>
-                            </p>
+                <div data-aos="fade-up" data-aos-duration="3000">
+
+                    <div class="col-md-6">
+                        <div class="card text-danger text-center">
+                            <img class="card-img" src="./image/General_FOLDER_1969 GroupPic B&W Trans.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title text-center"></h4>
+                                <p class="card-text">
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted"></small>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
                         <div class="card text-danger text-center">
                             <img class="card-img" src="./image/sacregraal.jpg" alt="">
                             <div class="card-img-overlay">
@@ -91,6 +95,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
                     <div class="col-md-4">
                         <div class="card text-danger text-center">
                             <img class="card-img fluide" src="./image/FluideMontyPhyton-Chauzy-b6e68.jpg" alt="">
@@ -104,10 +111,11 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
+
             </div>
+        </div>
     </section>
     <section>
         <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
@@ -137,9 +145,9 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
-<script>
+        AOS.init();
+    </script>
+    <script>
         $('#year').text(new Date().getFullYear());
 
         CKEDITOR.replace('editor1');
