@@ -34,6 +34,7 @@ nav{
 }
 .nav-item{
     margin-left: 10px;
+    z-index: 2;
 }
 .nav-link{
     font-size: 22px;
@@ -67,15 +68,16 @@ nav{
     object-fit: contain;
 }
 .card{
-    width: 500px;
+    width: 400px;
     margin-left: 80px;
    
 }
 
 .card-img{
     display: block;
-    width: 500px;
+    width:500px;
     height: 100%;
+    
      
 }
 
