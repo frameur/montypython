@@ -37,6 +37,12 @@ nav{
     width: 50px;
     background-image:url(/image/monty5.gif);
     border-radius: 50%;
+    
+}
+.navbar-toggler-icon:hover{
+    filter: sepia(100%);
+    transform: rotate(80deg);
+    
 }
 .nav-item{
     margin-left: 20px;
@@ -50,7 +56,8 @@ nav{
 }
 .nav-item a:hover{
     filter: sepia(100%);
-    transform: scale(1.3);
+    transform: scale(1.2);
+    
 }
 
 .nav-link img{
@@ -60,13 +67,15 @@ nav{
 }
 .nav-link img:hover{
   filter: sepia(100%);
-  transform: scale(1.3);
+  transform: scale(1.2);
+  
 }
 .navbar-brand{
     font-size: 30px;
 }
 .nav-link-active{
     filter: sepia(0);
+    
 }
 
 
