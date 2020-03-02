@@ -18,7 +18,9 @@ body{
     width: 100%;
     background-image: url(./image/645509_1680_1050.jpg);
     object-fit: contain;
+    background-attachment: fixed;
     background-repeat: ;
+    font-family: 'Rye', cursive;
     
 }
 
@@ -79,6 +81,8 @@ nav{
 }
 .nav-link-active{
     filter: sepia(0);
+    transform: none;
+   
     
 }
 
@@ -91,11 +95,43 @@ nav{
     margin-left: auto;
    
 }
-@media (min-widht:400px){
-    .card-img{
-        width: 250px;
+@media (min-width:400px){
+ div.card-img-overlay.fluide{
+        width: 360px;
+        height: 600px;
     }
 }
+@media (min-width:400px){
+    div.card{
+           width: 360px;
+           height: 600px;
+       }
+   }
+   @media (min-width:350px){
+    div.card-img-overlay.fluide{
+           width: 310px;
+           height: 550px;
+       }
+   }
+   @media (min-width:350px){
+       div.card{
+              width: 310px;
+              height: 550px;
+          }
+      }
+      @media (max-width:400px){
+          a.nav-link{
+              width: auto;
+              height: auto;
+          }
+      }
+      @media (max-width:400px){
+        a.nav-link-img{
+            width: auto;
+            height: auto;
+        }
+    }
+
 
 .card-img{
     display: block;
