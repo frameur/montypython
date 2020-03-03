@@ -73,15 +73,15 @@ nav{
 }
 .nav-link img:hover{
   filter: sepia(100%);
-  transform: scale(1.2);
+  transform: scale(0.3);
   
 }
 .navbar-brand{
     font-size: 30px;
 }
-.nav-link-active{
-    filter: sepia(0);
-    transform: none;
+.nav-item.nav-link-active{
+    filter: none;
+    transform: scale(2);
    
     
 }
