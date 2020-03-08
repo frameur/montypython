@@ -27,7 +27,7 @@
     </section>
     <!-- barre de navigation -->
 
-    <nav class="navbar navbar-expand-sm navbar-danger mt-5">
+    <nav class="navbar navbar-expand-sm navbar-danger mb-5">
         
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="index.html"></a> -->
@@ -38,7 +38,7 @@
               
                 <ul class="navbar-nav ml-5">
                     <li class="nav-item >
-                        <a class="nav-link active" target="self" href="index.html">PYTHONS<img src="./image/monty1.gif" alt="monty python" rel="7"> </a>"
+                        <a class="nav-link active" target="self" href="index.html">PYTHONS<img src="./image/monty1.gif" alt="monty python" rel="7"> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"  href="news.html">NEWS<img src="./image/monty2.gif" alt="monty python"> </a>
@@ -59,10 +59,10 @@
                     
                 </ul>
                
-                <!-- <form class="form-inline ml-auto">
-                    <input type="text" class="form-control mr-2" placeholder="Search">
-                    <button class="btn btn-outline-info">envoyer</button>
-                </form> -->
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-2" placeholder="Votre recherche....">
+                    <button class="btn btn-outline-info m-2">envoyer</button>
+                </form>
             </div>
         </div>
     </nav>
@@ -139,7 +139,7 @@
 
         </footer>
     </section>
-
+    <script src="/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -153,11 +153,13 @@
     <script>
         AOS.init();
     </script>
+    <!-- <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script> -->
     <script>
         $('#year').text(new Date().getFullYear());
 
         CKEDITOR.replace('editor1');
     </script>
+    
 </body>
 
 </html>
