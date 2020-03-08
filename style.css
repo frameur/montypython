@@ -11,6 +11,8 @@ font-family: 'Fontdiner Swanky', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -92,11 +94,51 @@ nav{
 .nav-link .active{
     position: fixed;
 }
-
-
-.test{
-   
+/* carousel */
+.title{
+    font-size: 25px;
+    color:  #232323;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
+.item{
+    margin: 40px 10px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 15px #3232321a, 0 5px 15px #0000001a;
+    transition: transform 0.3s;
+    transform: translate3d(0, -1px, 0);
+    
+}
+.item:hover{
+    transform: translate3d(0, -10px, 0);
+}
+
+.itemimg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.itemimg img{
+    width: 100%;
+    height: auto;
+}
+.itembody{
+    padding: 25px;
+}
+.itemtitle{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #232323;
+}
+.itemdes{
+    color: #585858;
+}
+
+/* end carousel */
+
+/* les albums */
 .card{
     width: auto;
     margin-left: auto;
@@ -160,6 +202,8 @@ nav{
     height: auto;
     border-radius: 20px;
 }
+
+/* pied de page */
 footer{
     bottom: 0;
     width: auto;
