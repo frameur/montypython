@@ -14,19 +14,19 @@ font-family: 'Fontdiner Swanky', cursive;
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-image: url(./image/645509_1680_1050.jpg);
     object-fit: contain;
     background-attachment: fixed;
-    background-repeat: ;
+    /* background-repeat: ; */
     font-family: 'Rye', cursive;
     
 }
 
 h1{
     font-family: 'Rye', cursive;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 50px;
     margin: auto;
 }
@@ -55,7 +55,7 @@ nav{
     margin-top: auto;
 }
 .nav-link{
-    font-size: 20px;
+    font-size: 25px;
 }
 .nav-item a{
     transition: 2s;
@@ -85,6 +85,9 @@ nav{
     transform: scale(2);
    
     
+}
+.nav-link .active{
+    position: fixed;
 }
 
 
