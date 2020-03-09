@@ -1,3 +1,5 @@
+//navigateur menu bouton fixed
+
 // const afficherOnglet = function(a){
 //     var navItem = document.querySelectorAll('.navbar-nav a')
 //     for (var i = 0; <navItem.length; i++)
