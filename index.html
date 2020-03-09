@@ -71,69 +71,30 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="title text-center ">
-            MON PYTHON CAROUSEL
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div id="playPause" onclick="playPauseSlides()"></div>
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <img src="./image/img_1.jpg">1366X768
+                <p class="captionText">Caption Text-01</p>
+            </div>
+            <div class="imageHolder">
+                <img src="/images/img_2.jpg">
+                <p class="captionText">Caption Text-02</p>
+            </div>
+            <div class="imageHolder">
+                <img src="/images/img_3.jpg">
+                <p class="captionText">Caption Text-03</p>
+            </div>
+            <div class="imageHolder">
+                <img src="/images/img_4.jpg">
+                <p class="captionText">Caption Text-04</p>
+            </div>
         </div>
-         <div id="carousel1">
-            <div class="slider">
-                <div class="img">
-                    <img src="/image/fonddesite2.jpg" alt="">
-                </div>
-                
-            </div>
-            <div class="slider">
-                <div class="img">
-                    <img src="/image/banniere.jpg" alt="">
-                </div>
-               
-            </div>
-            <div class="slider">
-                <div class="itemimg">
-                    <img src="/image/montytroup.jpg" alt="">
-                </div>
-                
-            </div>
-            <div class="slider">
-                <div class="img">
-                    <img src="/image/fondsite.jpg" alt="">
-                </div>
-                
-            </div>
-            <div class="slider">
-                <div class="img">
-                    <img src="/image/imagefond.jpg" alt="">
-                </div>
-                
-            </div>
-            <div class="slider">
-                <div class="img">
-                    <img src="/image/General_FOLDER_1969 GroupPic B&W Trans.jpg" alt="">
-                </div>
-               
-            </div>
-        </div> 
-        <div class="controls">
-            <button class="btn" id="prev">Prev
-            </button>
-            <button class="btn" id="next">Next 
-            </button>
-        </div>
-    </div>
-    
-    <!-- <div id="carousel2">
-        <ul class="item">
-            <li class="itemimg"> 
-            <img src="/" alt="">
-            </li>
-            <li class="itemimg"><img src="/image/banniere.jpg" alt=""></li>
-            <li class="itemimg"><img src="/image/fonddesite2.jpg" alt=""></li>
-            <li class="itemimg"><img src="/image/imagefond.jpg" alt=""></li>
-            <li class="itemimg"><img src="/image/General_FOLDER_1969 GroupPic B&W Trans.jpg" alt=""></li>
-            <li class="itemimg"><img src="/image/montytroup.jpg" alt=""></li>
-        </ul>
-    </div> -->
-    <div id="carousel3"></div>
+        <div id="dotsContainer"></div>
     </div>
     <!-- photos troup -->
 
