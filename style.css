@@ -265,14 +265,14 @@ nav {
 
 .galleryContainer .moveLeftCurrentSlide{
     animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-fill-mode:forwards;
 
 }
 .galleryContainer .moveLeftNextSlide{
     animation-name: moveLeftNext;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-fill-mode:forwards;
 }
@@ -288,13 +288,13 @@ nav {
 
 .galleryContainer .moveRightCurrentSlide{
     animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-fill-mode:forwards;
 }
 .galleryContainer .moveRightPrevSlide{
     animation-name: moveRightPrev;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-fill-mode:forwards;
 }
@@ -308,7 +308,7 @@ nav {
 }
 .slideTextFromBottom {
     animation-name: slideTextFromBottom;
-    animation-duration: 0.7s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-out;
 }
 @keyframes slideTextFromBottom {
@@ -317,7 +317,7 @@ nav {
 }
 .slideTextFromTop {
     animation-name: slideTextFromTop;
-    animation-duration: 0.7s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-out;
 }
 @keyframes slideTextFromTop {
@@ -328,6 +328,7 @@ nav {
 /* end carousel */
 
 /* les albums */
+
 .card {
     width: auto;
     margin-left: auto;
