@@ -123,6 +123,7 @@ nav{
 .itemimg img{
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 .itembody{
     padding: 25px;
