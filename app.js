@@ -1,23 +1,27 @@
-//navigateur menu bouton fixed
+// le carousel 
 
-// const afficherOnglet = function(a){
-//     var navItem = document.querySelectorAll('.navbar-nav a')
-//     for (var i = 0; <navItem.length; i++)
-//         navItem[i].addEventListener('click',function(e){
-//     var li = a.parentNode
-//     var div = a.parentNode.parentNode.parentNode
-// if(li.classList.contains('active')){
-//     return false
-// }
-// //ont retirent onglet actif
+const slider = document.querySelector('.slider');
+const buttons = document.querySelectorAll('.btn');
+const options = document.querySelectorAll('.option');
+const slides = document.querySelectorAll('.img');
 
-// div.querySelector('.navbar-nav .active')
+var index = 1;
+var size = slides[index].clientWidth;
 
-// //ajout active actuel
+uptade();
 
-// li.classList.add('active')
+function uptade(){
+    slider.style.transfom = "translatex("+(-size * index) *"px)";
 
-// div.querySelector('.nav-link .active').classList.remove('active')
-// div.querySelector(this.getAttribute('href')).classList.add('active')
-// })
-// }
+}
+
+function btnCheck(){
+    if(this.id === "prev"){
+        index--;
+    }
+    else if(this.id === "next"){
+        index++;
+    }
+}
+
+buttons.forEach(btn => btn.addEventListener)
