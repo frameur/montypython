@@ -71,6 +71,14 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+    <div class="compteurtemps">
+        <h1>TIME'S PYTHON</h1>
+        <p>LE PYTHON ACTUELLEMENT EST<span id="temps-actuel"></span> </p>
+        <button id="start">click debut</button>
+        <button id="stop">click arret</button>
+    </div>
+    </div>
     <div class="galleryContainer">
         <div class="slideShowContainer">
             <div id="playPause" onclick="playPauseSlides()"></div>
@@ -78,19 +86,19 @@
             <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
             <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
             <div class="imageHolder">
-                <img src="/image/montytroup.jpg">1366X768
+                <img src="/image/img_1.jpg">1366X768
                 <p class="captionText">MON PYTHON 1</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/fonddesite2.jpg">
+                <img src="/image/img_2.jpg">
                 <p class="captionText">MON PYTHON 2</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/banniere.jpg">
+                <img src="/image/img_3.jpg">
                 <p class="captionText">MON PYTHON 3</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/imagefond.jpg">
+                <img src="/image/img_4.jpg">
                 <p class="captionText">MON PYTHON 4</p>
             </div>
         </div>
@@ -188,6 +196,7 @@
         AOS.init();
     </script>
     <script src="/app.js"></script>
+    <script src="/time.js"></script>
     <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     <script>
         $(document).on('click', 'img a',function(){
