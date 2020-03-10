@@ -1,6 +1,6 @@
 //le python temps
 
-var d = naw Date("2015-05-14T14:15:00Z")
+var d = new Date("2015-05-14T14:15:00Z")
 
 var tempsCourant = document.getElementById('temps-actuel'); {
     var d = new Date();
@@ -16,3 +16,4 @@ var compteurTemps = document.getElementById("start").addEventListener("click", f
     refreshTime();
 setInterval(refreshTime, 1000);
 })
+// end le python temps
