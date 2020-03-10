@@ -1,24 +1,23 @@
 //le python temps
-
 var d = new Date("2020-03-14T14:15:00Z")
 console.log(d);
 
 
-
-var tempsCourant = document.getElementById("temps-actuel"); {
+function refreshTime(){
+var tempsCourant = document.getElementById("temps-actuel"); 
     var d = new Date();
     tempsCourant.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 }
-
-
-var compteurTemps = document.getElementById("stop").addEventListener("click", function () {
+refreshTime();
+var compteurTemps = setInterval(refreshTime, 1000);
+document.getElementById("stop").addEventListener("click", function () {
     clearInterval(compteurTemps);
-    refreshTime();
-    setInterval(refreshTime, 1000);
+    
+    
 })
-var compteurTemps = document.getElementById("start").addEventListener("click", function () {
+document.getElementById("start").addEventListener("click", function () {
     refreshTime();
-    setInterval(refreshTime, 1000);
+    var compteurTemps = setInterval(refreshTime, 1000);
 })
 // end le python temps
 // le carousel 
