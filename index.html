@@ -93,13 +93,13 @@
 
     </div>
     <!-- time one  -->
-    <div class="container">
+    <div class="container" style="background-color: cornflowerblue; width: 600px; border-radius: 20px;" >
         <div id="compteurtemps">
-            <h1 style="text-align: center; color: brown;">TIME'S PYTHON</h1>
-            <p style="text-align: center;"><br><span id="timeactu" style="font-size: 75px; color: brown;"></span> </p>
+            <h1 style="text-align: center; color: rgb(15, 14, 14);">TIME'S PYTHON</h1>
+            <p style="text-align: center;"><br><span id="timeactu" style="font-size: 75px; color: rgb(10, 7, 7);"></span> </p>
             <button id="start"
-                style="margin-left: 33%; background-color: cornflowerblue;border:blue solid ;">Relancer le temps</button>
-            <button id="stop" style="background-color:yellowgreen; width: 170px;border: tomato solid ;">Arrêter le temps</button>
+                style="margin-left: 23%;">Relancer le temps</button>
+            <button id="stop">Arrêter le temps</button>
         </div>
     </div>
 <!-- carousel -->
@@ -112,19 +112,19 @@
                 <p class="captionText slideTextFromTop"></p>
             </div>
             <div class="imageHolder">
-                <img src="/image/img_1.jpg">1366X768
+                <img src="/image/img_1.jpg" style="opacity:0.5;">1366X768
                 <p class="captionText">MON PYTHON 1</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/img_2.jpg">
+                <img src="/image/img_2.jpg" style="opacity:0.5;">
                 <p class="captionText">MON PYTHON 2</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/img_3.jpg">
+                <img src="/image/img_3.jpg" style="opacity:0.5;">
                 <p class="captionText">MON PYTHON 3</p>
             </div>
             <div class="imageHolder">
-                <img src="/image/img_4.jpg">
+                <img src="/image/img_4.jpg" style="opacity:0.5;">
                 <p class="captionText">MON PYTHON 4</p>
             </div>
         </div>
@@ -162,13 +162,14 @@
     <script>
         AOS.init();
     </script>
+    <script src="/btn.js"></script>
     <script src="/time2.js"></script>
     <script src="/time.js"></script>
     <script src="/app.js"></script>
 
     <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     <script>
-        $(document).on('click', 'img a', function () {
+        $(document).on('click', 'nav-link', function () {
             $(this).addClass('active').siblings().removeClass('active')
         })
     </script>
