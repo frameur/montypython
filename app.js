@@ -75,7 +75,7 @@ function moveSlide(n){
     }
 
 }
-var timer=null;
+let timer=null;
 function setTimer(){
     timer=setInterval(function () {
         plusSlides(1) ;
@@ -83,7 +83,7 @@ function setTimer(){
 }
 setTimer();
 function playPauseSlides() {
-    var playPauseBtn=document.getElementById("playPause");
+    let playPauseBtn=document.getElementById("playPause");
     if(timer==null){
         setTimer();
         playPauseBtn.style.backgroundPositionY="0px"
