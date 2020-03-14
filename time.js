@@ -29,7 +29,7 @@ document.getElementById("stop").addEventListener("click", function () {
 
 
 });
-//commande depart heure
+//commande relance heure
 
 document.getElementById("start").addEventListener("click", function () {
     refreshTime();

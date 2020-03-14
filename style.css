@@ -222,7 +222,7 @@ nav {
     position: absolute;
     bottom: 0;
     z-index: 1;
-    color: white;
+    color: black;
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
@@ -330,78 +330,7 @@ nav {
 
 /* end carousel */
 
-/* les albums */
 
-.card {
-    width: auto;
-    margin-left: auto;
-
-}
-
-@media (min-width:400px) {
-    div.card-img-overlay.fluide {
-        width: 360px;
-        height: 600px;
-    }
-}
-
-@media (min-width:400px) {
-    div.card {
-        width: 360px;
-        height: 600px;
-    }
-}
-
-@media (min-width:350px) {
-    div.card-img-overlay.fluide {
-        width: 310px;
-        height: 550px;
-    }
-}
-
-@media (min-width:350px) {
-    div.card {
-        width: 310px;
-        height: 550px;
-    }
-}
-
-@media (max-width:400px) {
-    a.nav-link {
-        width: auto;
-        height: auto;
-    }
-}
-
-@media (max-width:400px) {
-    a.nav-link-img {
-        width: auto;
-        height: auto;
-    }
-}
-
-
-.card-img {
-    display: block;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-
-}
-
-.card-img-overlay {
-    border: black solid 0;
-    border-radius: 20px;
-    box-shadow: black 10px 10px 10px;
-    margin-bottom: 10px;
-    width: auto;
-    object-fit: contain;
-}
-
-.card-img-overlay-fluide {
-    height: auto;
-    border-radius: 20px;
-}
 
 /* pied de page */
 footer {
@@ -409,7 +338,7 @@ footer {
     width: auto;
 
 }
-/* time on */
+/* time two */
 *, *::after, *::before {
     box-sizing: border-box;
     
