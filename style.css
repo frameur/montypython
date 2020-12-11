@@ -41,8 +41,8 @@ nav {
 
 }
 #navbarNav{
-    display: flex;
-    justify-content: space-around;
+  grid-row: auto;
+  justify-content: space-around;
     
 }
 
