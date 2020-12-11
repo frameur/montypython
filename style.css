@@ -1,13 +1,13 @@
 /* general */
 /* fonts */
-font-family: 'Akronim',
+/* font-family: 'Akronim',
 cursive;
 font-family: 'Rye',
 cursive;
 font-family: 'Bungee Shade',
 cursive;
 font-family: 'Fontdiner Swanky',
-cursive;
+cursive; */
 
 
 */ {
@@ -40,6 +40,11 @@ nav {
     font-family: 'Rye', cursive;
 
 }
+#navbarNav{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
 .navbar-toggler-icon {
     height: 50px;
@@ -55,7 +60,7 @@ nav {
 
 .navbar-toggler-icon:hover {
     filter: sepia(100%);
-    transform: rotate(70deg);
+    transform: rotate(50deg);
     border: solid 2px;
 
 }
@@ -67,11 +72,13 @@ nav {
 }
 
 .nav-link {
-    font-size: 25px;
+    font-size: 20px;
+  
 }
 
 .nav-item a {
     transition: 2s;
+    width: 100%;
 }
 
 .nav-item a:hover {
@@ -354,9 +361,7 @@ footer {
     margin-right: auto;
   }
   @media(max-width:1100px){
-    {
-        
-      }
+  
   }
  
   
