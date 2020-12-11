@@ -433,5 +433,18 @@ footer {
     height: 35%;
     background-color: red;
   }
+  .buttonsa {
+    display: flex;
+    justify-content: center;
+  }
+  button{
+      background-color: rgb(240, 146, 93);
+      margin-bottom: 1.5rem;
+      height: 5rem;
+      width: 5rem;
+      border: red solid 2px;
+      border-radius: 50%;
+      box-shadow: 10px 5px 5px red;
+  }
 
 
