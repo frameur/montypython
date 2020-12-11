@@ -15,18 +15,18 @@ cursive; */
     padding: 0;
     box-sizing: border-box;
     min-height: 100%;
-    overflow-x: hidden;
+    
 }
 
 body {
     height: 100vh;
     width: 100%;
     background-image: url(./image/fondprincipe.jpg);
+    background-position: top;
     object-fit: contain;
     background-attachment: fixed;
-    /* background-repeat: ; */
     font-family: 'Rye', cursive;
-
+overflow-x: hidden;
 }
 
 h1 {
@@ -122,6 +122,15 @@ nav {
 
 .navbar-toggler-icon {
     color: red;
+}
+@media (max-width:550px){
+    body{
+        background-image: url(./image/fondprincipe.jpg) no-repeat center/cover;
+        background-position: top;
+        background-size: 800px;
+        object-fit: contain;
+        background-attachment: fixed;
+    }
 }
 
 /* carousel */
