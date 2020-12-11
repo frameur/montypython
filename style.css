@@ -21,7 +21,7 @@ cursive; */
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(./image/645509_1680_1050.jpg);
+    background-image: url(./image/fondprincipe.jpg);
     object-fit: contain;
     background-attachment: fixed;
     /* background-repeat: ; */
@@ -333,6 +333,11 @@ nav {
 }
 .captionText{
     font-family: rye;
+}
+@media(max-width:550px){
+    .galleryContainer{
+        height: 300px;
+    }
 }
 
 /* end carousel */
