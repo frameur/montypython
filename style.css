@@ -107,12 +107,14 @@ nav {
 .nav-item.nav-link-active {
     filter: none;
     transform: scale(2);
+    
 
 
 }
 
-.nav-link .active {
-    position: fixed;
+.nav-link.active {
+    filter: grayscale(100%);
+    color: #232323;
 }
 
 .navbar-toggler-collaspse {
