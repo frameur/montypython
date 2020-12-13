@@ -79,6 +79,7 @@ nav {
 .nav-item a {
     transition: 2s;
     width: 100%;
+    color: red;
 }
 
 .nav-item a:hover {
@@ -114,7 +115,7 @@ nav {
 
 .nav-link.active {
     filter: grayscale(100%);
-    color: #232323;
+   
 }
 
 .navbar-toggler-collaspse {
