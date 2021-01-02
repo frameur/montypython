@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Akronim|Bungee+Shade|Fontdiner+Swanky|Rye&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style3.css">
     <link rel="shortcut icon" href="./image/monty3.gif">
     <title>Monty python</title>
 </head>
@@ -24,7 +25,7 @@
         </div>
     </section>
     <!-- barre de navigation -->
-
+    <div class="cursor"></div>
     <nav class="navbar navbar-expand-sm navbar-danger mb-5">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="index.html">MONTY PYTHON</a> -->
@@ -33,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
 
-                <ul class="navbar-nav ml-5">
+                <ul class="nav-links">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">HOME<img src="./image/monty1.gif" alt="monty python humour anglais"> </a>
                     </li>
@@ -61,51 +62,25 @@
             </div>
         </div>
     </nav>
-    <!-- <section class="photos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card text-danger text-center">
-                        <img class="card-img" src="./image/General_FOLDER_1969 GroupPic B&W Trans.jpg" alt="">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title text-center"></h4>
-                            <p class="card-text">
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted"></small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card text-danger text-center">
-                        <img class="card-img" src="./image/banniere.jpg" alt="">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title text-center"></h4>
-                            <p class="card-text">
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted"></small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-    </section> -->
+    <div class="img"></div>
+<p class="text-justify" style="margin: 2rem;color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus rem est dolorum ratione, deserunt saepe ea. Ipsa nisi a tempore. Et fuga adipisci facere cupiditate harum eius eum modi consequatur nobis enim sunt laudantium suscipit excepturi dolor quas tempora mollitia praesentium, earum cumque autem rem quos voluptatem minima. Adipisci facilis, quaerat necessitatibus pariatur eaque eveniet eius porro officia ad fuga iste autem reprehenderit sequi animi rem, officiis ipsam accusantium dignissimos deleniti praesentium. Vel possimus iste aut, esse ut amet?</p>
+    
     <section>
-        <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <footer id="main-footer" class="bg-dark text-dark mt-5 p-5">
             <div class="container-fluide">
                 <div class="row">
                     <div class="col">
                         <p class="lead text-center">
                             Copyright &copy;
                             <span id="year"></span>
-                            <h1 class="text-center">MONTY PYTHON</h1>
+                            <h1  class="text-center">MONTY PYTHON</h1>
                     </div>
                 </div>
             </div>
 
         </footer>
     </section>
-    <script src="/app.js"></script>
+    <script src="/script2.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -115,6 +90,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
     <script>
         $('#year').text(new Date().getFullYear());
 

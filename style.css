@@ -26,6 +26,7 @@ body {
     object-fit: contain;
     background-attachment: fixed;
     font-family: 'Rye', cursive;
+    overflow-x: hidden;
    
 }
 
@@ -38,6 +39,7 @@ h1 {
 
 nav {
     font-family: 'Rye', cursive;
+   
 
 }
 #navbarNav{
@@ -74,6 +76,9 @@ nav {
 .nav-link {
    
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
   
 }
 
@@ -360,7 +365,7 @@ nav {
 
 /* pied de page */
 footer {
-    height: 30vh;
+    height: 40vh;
     width: auto;
     opacity: 60%;
     color: rgb(17, 17, 27);
