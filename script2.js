@@ -9,7 +9,7 @@ function cursor(e) {
 }
 
 //cursor growing
-let navLinks = document.querySelectorAll(".nav-link li, h1, .lead");
+let navLinks = document.querySelectorAll(".nav-item li, h1, .lead");
 
 navLinks.forEach(link => {
 

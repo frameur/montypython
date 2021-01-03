@@ -76,10 +76,7 @@ nav {
 .nav-link {
    
     font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-  
+    
 }
 
 .nav-item a {

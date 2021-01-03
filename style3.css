@@ -13,9 +13,8 @@ body{
 
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-between;
+.nav-link{
+    
     list-style-type: none;
 }
 
