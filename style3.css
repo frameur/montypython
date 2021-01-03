@@ -27,9 +27,12 @@ body{
     background: url(./image/fondsite.jpg) no-repeat center/cover;
     filter: sepia(90%);
     transition: 3s;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px;
    
     
 }
+
 @media (max-width:550px){
     .img{
      width: 45vh;
