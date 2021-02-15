@@ -139,6 +139,9 @@ nav {
         font-size: 43px;
     }
 }
+main{
+    height: 100vh;
+}
 
 /* carousel */
 

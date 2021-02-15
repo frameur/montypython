@@ -43,6 +43,7 @@ body{
     }
     p{
         font-size: 12px;
+        
     }
 }
 .img:hover{
@@ -73,4 +74,7 @@ body{
     transition: 0.3s ease-out;
     z-index: 3;
 
+}
+footer{
+    margin-top: 20px;
 }
