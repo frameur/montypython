@@ -127,16 +127,20 @@ nav {
 .navbar-toggler-icon {
     color: red;
 }
-@media (max-width:550px){
+@media (max-width:600px){
     body{
         background-image: url(./image/fondprincipe.jpg) no-repeat center/cover;
         background-position: top;
         background-size: 800px;
         object-fit: contain;
         background-attachment: fixed;
+        
     }
     h1{
         font-size: 43px;
+    }
+    footer{
+        width: 300px;
     }
 }
 main{
@@ -353,7 +357,7 @@ main{
 .captionText{
     font-family: rye;
 }
-@media(max-width:550px){
+@media(max-width:600px){
     .galleryContainer{
         height: 300px;
     }
@@ -366,9 +370,10 @@ main{
 /* pied de page */
 footer {
     height: 40vh;
-    width: auto;
+    width: 100%;
     opacity: 60%;
     color: rgb(17, 17, 27);
+ 
 
 }
 /* time two */
