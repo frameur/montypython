@@ -157,6 +157,15 @@ nav {
     footer {
         width: 300px;
     }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50px;
+        background: url(./monty5.gif) center/cover;
+        opacity: 0;
+        animation: anim 15s forwards;
+        filter: hue-rotate(0deg);
+    }
 }
 
 main {
