@@ -147,6 +147,7 @@ nav {
         background-size: 800px;
         object-fit: contain;
         background-attachment: fixed;
+        overflow: hidden;
     }
 
     h1 {
