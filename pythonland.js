@@ -18,7 +18,7 @@ const bubbleMaker = () => {
     'url("./image/bg13.webp") bottom/cover',
   ];
 
-  const size = Math.random() * 300 + 100 + "px";
+  const size = Math.random() * 150 + 100 + "px";
   bubble.style.height = size;
   bubble.style.width = size;
 

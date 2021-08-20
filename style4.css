@@ -39,7 +39,7 @@ h1 {
 /* bubble monty */
 .bubble {
     position: absolute;
-    border-radius: 150px;
+    border-radius: 100px;
     background: url(./monty5.gif) center/cover;
     opacity: 0;
     animation: anim 15s forwards;
