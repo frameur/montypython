@@ -15,19 +15,21 @@ cursive; */
     padding: 0;
     box-sizing: border-box;
     min-height: 100%;
-    
+
 }
 
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(./image/fondprincipe.jpg);
+    background: url(./image/fondprincipe.webp) center/cover;
     background-position: top;
     object-fit: contain;
     background-attachment: fixed;
     font-family: 'Rye', cursive;
     overflow-x: hidden;
-   
+    min-height: 100vh;
+    cursor: crosshair;
+
 }
 
 h1 {
@@ -37,15 +39,18 @@ h1 {
     margin: auto;
 }
 
+
+
 nav {
     font-family: 'Rye', cursive;
-   
+
 
 }
-#navbarNav{
-  grid-row: auto;
-  justify-content: space-around;
-    
+
+#navbarNav {
+    grid-row: auto;
+    justify-content: space-around;
+
 }
 
 .navbar-toggler-icon {
@@ -74,9 +79,9 @@ nav {
 }
 
 .nav-link {
-   
+
     font-size: 20px;
-    
+
 }
 
 .nav-item a {
@@ -111,12 +116,12 @@ nav {
 .nav-item.nav-link-active {
     filter: none;
     transform: scale(2);
-    
+
 }
 
 .nav-link.active {
     filter: grayscale(100%);
-   
+
 }
 
 .navbar-toggler-collaspse {
@@ -127,23 +132,27 @@ nav {
 .navbar-toggler-icon {
     color: red;
 }
-@media (max-width:600px){
-    body{
+
+@media (max-width:600px) {
+    body {
         background-image: url(./image/fondprincipe.jpg) no-repeat center/cover;
         background-position: top;
         background-size: 800px;
         object-fit: contain;
         background-attachment: fixed;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 43px;
     }
-    footer{
+
+    footer {
         width: 300px;
     }
 }
-main{
+
+main {
     height: 100vh;
 }
 
@@ -156,7 +165,7 @@ main{
     margin-bottom: 25px;
 }
 
-.galleryContainer{
+.galleryContainer {
     width: 100%;
     height: 500px;
     max-width: 1000px;
@@ -166,14 +175,16 @@ main{
     padding: 10px;
     box-sizing: border-box;
 }
-.galleryContainer .slideShowContainer{
+
+.galleryContainer .slideShowContainer {
     width: 100%;
     height: 90%;
     overflow: hidden;
     background-color: gainsboro;
     position: relative;
 }
-.galleryContainer .slideShowContainer #playPause{
+
+.galleryContainer .slideShowContainer #playPause {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -184,24 +195,29 @@ main{
     margin: 5px;
     cursor: pointer;
 }
-.galleryContainer .slideShowContainer #playPause:hover{
+
+.galleryContainer .slideShowContainer #playPause:hover {
     opacity: .7;
 }
-.galleryContainer .slideShowContainer .imageHolder{
+
+.galleryContainer .slideShowContainer .imageHolder {
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0;
 }
-.galleryContainer .slideShowContainer .imageHolder img{
+
+.galleryContainer .slideShowContainer .imageHolder img {
     width: 100%;
     height: 100%;
 }
-.galleryContainer .slideShowContainer .imageHolder .captionText{
+
+.galleryContainer .slideShowContainer .imageHolder .captionText {
     display: none;
 }
 
-.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+.galleryContainer .slideShowContainer .leftArrow,
+.galleryContainer .slideShowContainer .rightArrow {
     width: 50px;
     background: #00000036;
     position: absolute;
@@ -214,7 +230,8 @@ main{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.galleryContainer .slideShowContainer .rightArrow{
+
+.galleryContainer .slideShowContainer .rightArrow {
     left: auto;
     right: 0;
     border-top-right-radius: 0px;
@@ -222,11 +239,14 @@ main{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+
+.galleryContainer .slideShowContainer .leftArrow:hover,
+.galleryContainer .slideShowContainer .rightArrow:hover {
     background: #000000a8;
     cursor: pointer;
 }
-.galleryContainer .arrow{
+
+.galleryContainer .arrow {
     display: inline-block;
     border: 3px solid white;
     width: 10px;
@@ -240,15 +260,17 @@ main{
     top: 0;
     bottom: 0;
 }
-.galleryContainer .arrow.arrowLeft{
+
+.galleryContainer .arrow.arrowLeft {
     transform: rotateZ(-135deg);
 }
-.galleryContainer .arrow.arrowRight{
+
+.galleryContainer .arrow.arrowRight {
     transform: rotateZ(45deg);
 }
 
 
-.galleryContainer .slideShowContainer>.captionTextHolder{
+.galleryContainer .slideShowContainer>.captionTextHolder {
     position: absolute;
     bottom: 0;
     z-index: 1;
@@ -262,18 +284,20 @@ main{
     line-height: 50px;
     overflow: hidden;
 }
-.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText {
     margin: 0;
 }
 
-.galleryContainer #dotsContainer{
+.galleryContainer #dotsContainer {
     width: 100%;
     height: 10%;
     text-align: center;
     padding-top: 20px;
     box-sizing: border-box;
 }
-.galleryContainer #dotsContainer .dots{
+
+.galleryContainer #dotsContainer .dots {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -281,84 +305,142 @@ main{
     margin-left: 5px;
     background-color: #bbb;
     cursor: pointer;
-    transition:background-color 0.5s;
+    transition: background-color 0.5s;
 }
-.galleryContainer #dotsContainer .dots:first-child{
+
+.galleryContainer #dotsContainer .dots:first-child {
     margin-left: 0;
 }
-.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
-    background-color: #717171;;
+
+.galleryContainer #dotsContainer .dots:hover,
+.galleryContainer #dotsContainer .dots.active {
+    background-color: #717171;
+    ;
 }
 
 
 
 
-.galleryContainer .moveLeftCurrentSlide{
+.galleryContainer .moveLeftCurrentSlide {
     animation-name: moveLeftCurrent;
     animation-duration: 0.8s;
     animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 
 }
-.galleryContainer .moveLeftNextSlide{
+
+.galleryContainer .moveLeftNextSlide {
     animation-name: moveLeftNext;
     animation-duration: 0.8s;
     animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
+
 @keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    to {
+        margin-left: -100%;
+        opacity: 1;
+    }
 }
+
 @keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
+    from {
+        margin-left: 100%;
+        opacity: 1;
+    }
+
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
 }
 
 
-.galleryContainer .moveRightCurrentSlide{
+.galleryContainer .moveRightCurrentSlide {
     animation-name: moveRightCurrent;
     animation-duration: 0.8s;
     animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
-.galleryContainer .moveRightPrevSlide{
+
+.galleryContainer .moveRightPrevSlide {
     animation-name: moveRightPrev;
     animation-duration: 0.8s;
     animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
+
 @keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    to {
+        margin-left: 100%;
+        opacity: 1;
+    }
 }
+
 @keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
+    from {
+        margin-left: -100%;
+        opacity: 1;
+    }
+
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
 }
+
 .slideTextFromBottom {
     animation-name: slideTextFromBottom;
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
 }
+
 @keyframes slideTextFromBottom {
-    from {opacity: 0;margin-top: 100px}
-    to {opacity: 1;margin-top: 0px;}
+    from {
+        opacity: 0;
+        margin-top: 100px
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
+
 .slideTextFromTop {
     animation-name: slideTextFromTop;
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
 }
+
 @keyframes slideTextFromTop {
-    from {opacity: 0;margin-top: -100px}
-    to {opacity: 1;margin-top: 0px;}
+    from {
+        opacity: 0;
+        margin-top: -100px
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
-.captionText{
+
+.captionText {
     font-family: rye;
 }
-@media(max-width:600px){
-    .galleryContainer{
+
+@media(max-width:600px) {
+    .galleryContainer {
         height: 300px;
     }
 }
@@ -373,16 +455,19 @@ footer {
     width: 100%;
     opacity: 60%;
     color: rgb(17, 17, 27);
- 
+
 
 }
+
 /* time two */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
-    
-  }
-  
-  .clock {
+
+}
+
+.clock {
     width: 300px;
     height: 300px;
     background-image: url(/image/img4.jpg);
@@ -390,13 +475,12 @@ footer {
     border: 3px solid red;
     position: relative;
     margin-right: auto;
-  }
-  @media(max-width:1100px){
-  
-  }
- 
-  
-  .clock .number {
+}
+
+@media(max-width:1100px) {}
+
+
+.clock .number {
     --rotation: 0;
     position: absolute;
     width: 100%;
@@ -404,24 +488,56 @@ footer {
     text-align: center;
     transform: rotate(var(--rotation));
     font-family: 'rye';
-    color:rgb(17, 17, 27);
+    color: rgb(17, 17, 27);
     font-size: 1.5rem;
     font-weight: bolder;
-  }
-  
-  .clock .number1 { --rotation: 30deg; }
-  .clock .number2 { --rotation: 60deg; }
-  .clock .number3 { --rotation: 90deg; }
-  .clock .number4 { --rotation: 120deg; }
-  .clock .number5 { --rotation: 150deg; }
-  .clock .number6 { --rotation: 180deg; }
-  .clock .number7 { --rotation: 210deg; }
-  .clock .number8 { --rotation: 240deg; }
-  .clock .number9 { --rotation: 270deg; }
-  .clock .number10 { --rotation: 300deg; }
-  .clock .number11 { --rotation: 330deg; }
-  
-  .clock .hand {
+}
+
+.clock .number1 {
+    --rotation: 30deg;
+}
+
+.clock .number2 {
+    --rotation: 60deg;
+}
+
+.clock .number3 {
+    --rotation: 90deg;
+}
+
+.clock .number4 {
+    --rotation: 120deg;
+}
+
+.clock .number5 {
+    --rotation: 150deg;
+}
+
+.clock .number6 {
+    --rotation: 180deg;
+}
+
+.clock .number7 {
+    --rotation: 210deg;
+}
+
+.clock .number8 {
+    --rotation: 240deg;
+}
+
+.clock .number9 {
+    --rotation: 270deg;
+}
+
+.clock .number10 {
+    --rotation: 300deg;
+}
+
+.clock .number11 {
+    --rotation: 330deg;
+}
+
+.clock .hand {
     --rotation: 0;
     position: absolute;
     bottom: 50%;
@@ -432,9 +548,9 @@ footer {
     transform-origin: bottom;
     z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-  }
-  
-  .clock::after {
+}
+
+.clock::after {
     content: '';
     position: absolute;
     background-color: red;
@@ -445,31 +561,34 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-  }
-  
-  .clock .hand.second {
+}
+
+.clock .hand.second {
     width: 3px;
     height: 45%;
-    background-color:yellowgreen;
-  }
-  
-  .clock .hand.minute {
+    background-color: yellowgreen;
+}
+
+.clock .hand.minute {
     width: 7px;
     height: 40%;
     background-color: red;
-  }
-  
-  .clock .hand.hour {
+}
+
+.clock .hand.hour {
     width: 10px;
     height: 35%;
     background-color: red;
-  }
-  .buttonsa {
+}
+
+.buttonsa {
     display: flex;
     justify-content: center;
-  
-  }
-  #stop, #start{
+
+}
+
+#stop,
+#start {
     background-color: rgb(240, 146, 93);
     margin-bottom: 1.5rem;
     height: 5rem;
@@ -477,6 +596,4 @@ footer {
     border: red solid 2px;
     border-radius: 50%;
     box-shadow: 10px 5px 5px red;
-  }
-
-
+}

@@ -1,7 +1,6 @@
-
-
-body{
-    background-image: url(./image/fondprincipe.jpg);
+body {
+    background: url(./image/fondprincipe.webp) center/cover;
+    background-attachment: fixed;
     margin: 0;
     transition: 0.2s linear;
     font-family: 'Rye', cursive;
@@ -9,56 +8,76 @@ body{
     /* overflow: hidden; */
 }
 
-main{
-    
+main {
+
     margin: 3rem auto 0;
-    width: 900px;
+    width: 70%;
+    height: 100%;
     background: rgb(90, 203, 231);
+    background-attachment: fixed;
     padding: 1rem 2rem 2rem;
     box-shadow: 1px 2px 6px #333;
     border-radius: 4px;
-    
+
 }
-.img{
-    background: url(./image/banniere.jpg) no-repeat 100%/cover;
-    height: 450px;
+
+.img {
+    background: url(./image/banniere.jpg) top/cover;
+
+    height: 65%;
     border-radius: 4px;
+
 }
-@media (max-width:550px){
-    main{
-    width: 40vh;
+
+@media (max-width:1200px) {
+    .img {
+        height: 50%;
     }
-    .img{
+}
+
+@media (max-width:550px) {
+    main {
+        width: 40vh;
+    }
+
+    .img {
         height: 20vh;
     }
-    p{
+
+    p {
         font-size: 10px;
     }
-    .toggle{
-       padding: 5rem;
+
+    .toggle {
+        padding: 5rem;
     }
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
 }
-p{
+
+p {
     padding: 1rem;
     text-align: justify;
 }
-.toggle{
+
+.toggle {
     position: absolute;
     right: 2rem;
     top: 2rem;
 }
-.checkbox{
+
+.checkbox {
     display: none;
 }
-.label{
+
+.label {
     height: 26px;
     width: 50px;
-    background: rgb(182,182,182);
+    background: rgb(182, 182, 182);
     padding: 5px 8px;
     border-radius: 50px;
     cursor: pointer;
@@ -70,7 +89,8 @@ p{
     box-shadow: 2px 1px 1px #333;
 
 }
-.label .ball{
+
+.label .ball {
     background: #eee;
     border-radius: 50%;
     height: 22px;
@@ -79,26 +99,30 @@ p{
     top: 2px;
     left: 3px;
     transform: translateX(0px);
-    transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78 );
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
 }
-.checkbox:checked + .label .ball{
+
+.checkbox:checked+.label .ball {
     transform: translateX(23px)
 }
-.fa.moon{
+
+.fa.moon {
     color: #333;
 }
-.dark{
+
+.dark {
     background: #333;
 }
-.dark main{
+
+.dark main {
     background: #09FBBA;
 }
-.dark .label{
+
+.dark .label {
     box-shadow: 2px 1px 1px #09FBBA;
     background: #888;
 }
-.dark .ball{
+
+.dark .ball {
     background: #09FBBA;
 }
-
-

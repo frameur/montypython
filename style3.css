@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?familly=Rye&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "rye", cursive, sans-serif;
     /* overflow: hidden; */
     height: 100vh;
@@ -13,44 +14,47 @@ body{
 
 }
 
-.nav-link{
-    
+.nav-link {
+
     list-style-type: none;
 }
 
-.img{
-    height: 80vh;
-    width: 150vh;
+.img {
+    height: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: center;
-    background: url(./image/fondsite.jpg) no-repeat center/cover;
+    background: url(./image/fondsite.jpg) center/cover;
     filter: sepia(90%);
     transition: 3s;
     border-radius: 2rem;
     box-shadow: 5px 5px 10px;
-   
-    
+
+
 }
 
-@media (max-width:550px){
-    .img{
-     width: 45vh;
-     height: 40vh;
+@media (max-width:550px) {
+    .img {
+        width: 45vh;
+        height: 40vh;
     }
-    h1{
+
+    h1 {
         font-size: 43px;
     }
-    p{
+
+    p {
         font-size: 12px;
-        
+
     }
 }
-.img:hover{
+
+.img:hover {
     filter: none;
 }
 
-.cursor{
+.cursor {
     width: 3rem;
     height: 3rem;
     border: 2px solid #222;
@@ -63,19 +67,22 @@ body{
     z-index: 2;
     backdrop-filter: hue-rotate(100deg);
 }
-.link-grow{
+
+.link-grow {
     transform: scale(2) translate(-25%, -25%);
     background: #222;
     opacity: 0.6;
     z-index: 4;
 }
-.hovered-link{
+
+.hovered-link {
     color: white;
     transition: 0.3s ease-out;
     z-index: 3;
 
 }
-footer{
+
+footer {
     margin-top: 20px;
-    
+
 }
