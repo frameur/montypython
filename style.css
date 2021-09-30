@@ -10,12 +10,10 @@ font-family: 'Fontdiner Swanky',
 cursive; */
 
 
-*/ {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100%;
-
 }
 
 body {
@@ -460,12 +458,6 @@ footer {
 }
 
 /* time two */
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-
-}
 
 .clock {
     width: 300px;

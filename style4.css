@@ -9,173 +9,164 @@ cursive;
 font-family: 'Fontdiner Swanky',
 cursive; */
 
-*/ {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    background: url(./image/fondprincipe.webp) center/cover;
-    background-position: top;
-    object-fit: contain;
-    background-attachment: fixed;
-    font-family: "Rye", cursive;
-    overflow: hidden;
-    min-height: 100vh;
-    cursor: crosshair;
+  height: 100%;
+  width: 100%;
+  background: url(./image/fondprincipe.webp) center/cover;
+  background-position: top;
+  object-fit: contain;
+  background-attachment: fixed;
+  font-family: "Rye", cursive;
+  overflow: hidden;
+  cursor: crosshair;
 }
 
 h1 {
-    font-family: "Rye", cursive;
-    letter-spacing: 2px;
-    font-size: 50px;
-    margin: auto;
+  font-family: "Rye", cursive;
+  letter-spacing: 2px;
+  font-size: 50px;
+  margin: auto;
 }
 
 /* bubble monty */
 .bubble {
-    position: absolute;
-    border-radius: 100px;
-    background: url(./monty5.gif) center/cover;
-    opacity: 0;
-    animation: anim 15s forwards;
-    filter: hue-rotate(0deg);
+  position: absolute;
+  border-radius: 100px;
+  background: url(./monty5.gif) center/cover;
+  opacity: 0;
+  animation: anim 15s forwards;
+  filter: hue-rotate(0deg);
 }
 
 @keyframes anim {
-    to {
-        top: -250px;
-        left: var(--left);
-        transform: rotate(360deg);
-        opacity: 1;
-        filter: hue-rotate(720deg);
-    }
+  to {
+    top: -250px;
+    left: var(--left);
+    transform: rotate(360deg);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
 }
 
 h3 {
-    font-size: 10rem;
-    text-align: center;
-    margin-top: 20px;
-    color: rgba(235, 11, 11, 0.8);
+  font-size: 10rem;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(235, 11, 11, 0.8);
 }
 
 nav {
-    font-family: "Rye", cursive;
+  font-family: "Rye", cursive;
 }
 
 #navbarNav {
-    grid-row: auto;
-    justify-content: space-around;
+  grid-row: auto;
+  justify-content: space-around;
 }
 
 .navbar-toggler-icon {
-    height: 50px;
-    width: 50px;
-    background-image: url(/image/monty5.gif);
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-image: url(/image/monty5.gif);
+  border-radius: 50%;
 }
 
 .navbar-toggler-icon {
-    transition: 2s;
+  transition: 2s;
 }
 
 .navbar-toggler-icon:hover {
-    filter: sepia(100%);
-    transform: rotate(50deg);
-    border: solid 2px;
+  filter: sepia(100%);
+  transform: rotate(50deg);
+  border: solid 2px;
 }
 
 .nav-item {
-    margin-left: 20px;
-    margin-top: auto;
+  margin-left: 20px;
+  margin-top: auto;
 }
 
 .nav-link {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .nav-item a {
-    transition: 2s;
-    width: 100%;
-    color: red;
+  transition: 2s;
+  width: 100%;
+  color: red;
 }
 
 .nav-item a:hover {
-    filter: sepia(100%);
-    transform: scale(1.2);
-    margin-bottom: auto;
+  filter: sepia(100%);
+  transform: scale(1.2);
+  margin-bottom: auto;
 }
 
 .nav-link img {
-    transition: 2s;
+  transition: 2s;
 }
 
 .nav-link img:hover {
-    filter: sepia(100%);
-    transform: scale(0.3);
+  filter: sepia(100%);
+  transform: scale(0.3);
 }
 
 .navbar-brand {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .nav-item.nav-link-active {
-    filter: none;
-    transform: scale(2);
+  filter: none;
+  transform: scale(2);
 }
 
 .nav-link.active {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .navbar-toggler-collaspse {
-    color: red;
+  color: red;
 }
 
 .navbar-toggler-icon {
-    color: red;
+  color: red;
 }
 
 @media (max-width: 600px) {
-    body {
-        background-image: url(./image/fondprincipe.jpg) no-repeat center/cover;
-        background-position: top;
-        background-size: 800px;
-        object-fit: contain;
-        background-attachment: fixed;
-        overflow: hidden;
-    }
+  body {
+    background-image: url(./image/fondprincipe.jpg) no-repeat center/cover;
+    background-position: top;
+    object-fit: contain;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
 
-    h1 {
-        font-size: 43px;
-    }
-
-    footer {
-        width: 300px;
-    }
-
-    .bubble {
-        position: absolute;
-        border-radius: 50px;
-        background: url(./monty5.gif) center/cover;
-        opacity: 0;
-        animation: anim 15s forwards;
-        filter: hue-rotate(0deg);
-    }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+      font-size: 5rem;
+  }
+  p.lead {
+      font-size: 0.8rem;
+  }
 }
 
 main {
-    height: 100vh;
+  height: 100vh;
 }
 
 /* pied de page */
-footer {
-    height: 40vh;
-    width: 100%;
-    opacity: 60%;
-    color: rgb(17, 17, 27);
+p.lead {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  font-size: 2rem;
 }

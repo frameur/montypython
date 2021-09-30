@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: url(./image/fondprincipe.webp) center/cover;
     background-attachment: fixed;
@@ -5,7 +11,6 @@ body {
     transition: 0.2s linear;
     font-family: 'Rye', cursive;
     color: black;
-    /* overflow: hidden; */
 }
 
 main {
@@ -125,4 +130,7 @@ p {
 
 .dark .ball {
     background: #09FBBA;
+}
+.dark h1 {
+    color: #fff;
 }
