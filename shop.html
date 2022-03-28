@@ -10,6 +10,59 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./image/monty6.gif">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  />
+  <link href="./style.css" rel="stylesheet" />
+  <style>*{
+    box-sizing: border-box;
+}
+body{
+    /* color: #eee;
+     */
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    overflow: hidden;
+}
+.bg-image{
+    background: url(./media/basic-pics/7.jpg)center/cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(3px) contrast(70%);
+    
+}
+h2{
+    position: absolute;
+    padding: 2rem;
+    font-size: 4rem;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    background: rgba(241, 234, 234, 0.15);
+    
+}
+.fa-tint{
+    color: rgb(243, 241, 241);
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+    
+    
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+        
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
+</style>
     <title>Monty python</title>
 </head>
 
@@ -63,7 +116,8 @@
         </div>
     </nav>
     <main></main>
- 
+    <div class="bg-image"></div>
+    <h2>oh no, it's raining again</h2>
     <section>
         <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
             <div class="container-fluid">
@@ -80,7 +134,34 @@
 
         </footer>
     </section>
-    <script src="/app.js"></script>
+    <script>const body = document.body;
+
+        setInterval(rainFall, 6);
+        
+        function rainFall() {
+          const waterDrop = document.createElement("i");
+        
+          function generateRandomColor() {
+            let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            return randomColor;
+          }
+        
+          waterDrop.classList.add("fas");
+          waterDrop.classList.add("fa-tint");
+          waterDrop.style.fontSize = Math.random() * 13 + "px";
+          waterDrop.style.animationDuration = Math.random() * 2 + "s";
+          waterDrop.style.opacity = Math.random() + 0.3;
+          waterDrop.style.color = generateRandomColor();
+        
+          waterDrop.style.left = Math.random() * window.innerWidth + "px";
+        
+          body.appendChild(waterDrop);
+        
+          setTimeout(() => {
+            waterDrop.remove();
+          }, 6000);
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
