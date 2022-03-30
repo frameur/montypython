@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 
 const Works = () => {
@@ -6,6 +7,7 @@ const Works = () => {
     <div>
       <Navigation />
       <h1>le travail</h1>
+      <Footer />
     </div>
   );
 };

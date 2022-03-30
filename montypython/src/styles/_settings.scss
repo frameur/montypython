@@ -1,7 +1,3 @@
-// @font-face {
-//   font-family: "font-1";
-//   src: url(../assets/fonts/JosefinSans-Medium.ttf);
-// }
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
 
 $font-1: "Rye", sans-serif;
@@ -9,7 +5,14 @@ $font-1: "Rye", sans-serif;
 $color-1: #61dafb;
 $color-2: salmon;
 $color-3: #282c34;
-$white: rgb(243, 243, 243);
+$color-4: #4fedd2;
+$color-5: #36d0ea;
+$color-6: rgb(238, 238, 70);
+$color-7: #2a1d52;
+$color-8: #6c77f4;
+$color-9: rgb(99, 164, 233);
+$white: #ddd;
+$black: #333;
 
 @mixin verticalCenter {
   display: flex;
