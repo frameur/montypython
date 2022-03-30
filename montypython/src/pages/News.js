@@ -5,7 +5,7 @@ const News = () => {
   return (
     <div>
       <Navigation />
-      <h1>tu as des nouvelles des monty python</h1>
+      <h1>news</h1>
     </div>
   );
 };

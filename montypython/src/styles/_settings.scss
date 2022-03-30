@@ -24,12 +24,13 @@ $white: rgb(243, 243, 243);
 }
 
 body {
-  background: url(../assets/images/fondprincipe.webp) no-repeat center/cover;
+  background: url(../assets/images/fondprincipe.webp) no-repeat top;
   width: 100%;
   height: 100vh;
   object-fit: contain;
   font-family: $font-1;
-  @include verticalCenter;
+
+  // @include verticalCenter;
 }
 li {
   list-style-type: none;

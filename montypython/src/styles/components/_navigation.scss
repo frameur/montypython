@@ -1,6 +1,7 @@
 .navigation {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  grid-column: auto;
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
@@ -9,10 +10,42 @@
   transform: translate(-50%);
   margin: 10px 0 0 0;
 
+  .nav-active {
+    position: relative;
+    filter: sepia(80%);
+    transform: scale(0.8);
+
+    &::after {
+      content: "";
+      height: 5px;
+      width: 0;
+      background: $color-3;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-animation: anim 0.3s ease forwards;
+      animation: anim 0.6s ease forwards;
+
+      @-webkit-keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   a {
     text-decoration: none;
     height: 8rem;
+    width: 100%;
     transition: 0.6s;
+
     &:hover {
       filter: sepia(80%);
       transform: scale(0.8);
@@ -22,8 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 30px;
-
+      margin: 25px;
       li {
         color: $color-3;
         transition: 0.5s;
@@ -35,35 +67,6 @@
         &:hover {
           color: $color-3;
           transform: scale(1.8);
-        }
-      }
-
-      .nav-active {
-        position: relative;
-
-        &::after {
-          content: "";
-          height: 4px;
-          width: 0;
-          background: $color-1;
-          position: absolute;
-          border-radius: 10px;
-          bottom: 0px;
-          left: 50%;
-          transform: translateX(-50%);
-          -webkit-animation: anim 0.3s ease forwards;
-          animation: anim 0.6s ease forwards;
-
-          @-webkit-keyframes anim {
-            to {
-              width: 100%;
-            }
-          }
-          @keyframes anim {
-            to {
-              width: 100%;
-            }
-          }
         }
       }
     }

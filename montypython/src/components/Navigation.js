@@ -83,7 +83,7 @@ const Navigation = () => {
           <li>Works</li>
         </ul>
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/about"
         className={(nav) => (nav.isActive ? "nav-active" : "")}
         style={{
@@ -106,7 +106,7 @@ const Navigation = () => {
         <ul>
           <li>Contact</li>
         </ul>
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

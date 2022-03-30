@@ -5,7 +5,7 @@ const Media = () => {
   return (
     <div>
       <Navigation />
-      <h1>tous les films et séries</h1>
+      <h1>films and séries</h1>
     </div>
   );
 };

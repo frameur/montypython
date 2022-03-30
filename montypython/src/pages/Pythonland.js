@@ -5,7 +5,7 @@ const Pythonland = () => {
   return (
     <div>
       <Navigation />
-      <h1>le pays des pythons</h1>
+      <h1>pythonland</h1>
     </div>
   );
 };
