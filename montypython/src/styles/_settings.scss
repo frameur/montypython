@@ -3,7 +3,7 @@
 $font-1: "Rye", sans-serif;
 
 $color-1: #61dafb;
-$color-2: salmon;
+$color-2: rgb(231, 34, 12);
 $color-3: #282c34;
 $color-4: #4fedd2;
 $color-5: #36d0ea;
@@ -20,7 +20,9 @@ $black: #333;
   align-items: center;
 }
 
-* {
+*,
+:after,
+:before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -32,9 +34,12 @@ body {
   height: 100vh;
   object-fit: contain;
   font-family: $font-1;
+  overflow-x: hidden;
+  display: block;
 
   // @include verticalCenter;
 }
+
 li {
   list-style-type: none;
 }

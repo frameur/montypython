@@ -6,7 +6,7 @@ const Media = () => {
   return (
     <div>
       <Navigation />
-      <h1>films and séries</h1>
+
       <Footer />
     </div>
   );

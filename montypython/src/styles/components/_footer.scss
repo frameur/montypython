@@ -2,10 +2,11 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0;
+  bottom: -500px;
   background: #948f8f;
   width: 100%;
   opacity: 70%;
+  overflow-x: hidden;
 
   ul {
     display: flex;
@@ -15,7 +16,7 @@
 
     li {
       font-size: 1.5rem;
-      background: $white;
+      background: $color-7;
       color: $color-3;
       border-radius: 50%;
       padding: 0.5rem 0.8rem;
@@ -23,7 +24,7 @@
       cursor: pointer;
 
       a:visited {
-        color: $color-1;
+        color: $white;
       }
       &:nth-child(1) {
         padding: 0.5rem 0.85rem;
@@ -50,6 +51,7 @@
       color: $color-7;
       margin-bottom: 1rem;
       font-size: 2rem;
+      font-weight: 700;
 
       &:hover {
         color: $color-8;

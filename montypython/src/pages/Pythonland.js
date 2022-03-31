@@ -6,7 +6,6 @@ const Pythonland = () => {
   return (
     <div>
       <Navigation />
-      <h1>pythonland</h1>
       <Footer />
     </div>
   );

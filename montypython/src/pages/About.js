@@ -6,7 +6,6 @@ const About = () => {
   return (
     <div>
       <Navigation />
-      <h1>A propos</h1>
       <Footer />
     </div>
   );

@@ -6,7 +6,6 @@ const Shop = () => {
   return (
     <div>
       <Navigation />
-      <h1>acheter</h1>
       <Footer />
     </div>
   );
