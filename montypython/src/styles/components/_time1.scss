@@ -1,13 +1,17 @@
 .counter-container {
-  height: 150vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%);
   color: $color-2;
 
   h2 {
     font-size: 2rem;
     font-weight: 700;
+
+    @media screen and(max-width:600px) {
+      font-size: 1rem;
+    }
   }
 
   #timeactu {

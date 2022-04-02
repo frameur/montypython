@@ -1,12 +1,18 @@
 .socialNetwork {
   position: absolute;
   left: 50%;
+  height: 20vh;
   transform: translate(-50%);
-  bottom: -500px;
+  bottom: -620px;
   background: #948f8f;
   width: 100%;
   opacity: 70%;
-  overflow-x: hidden;
+  overflow-y: hidden;
+
+  @media screen and (max-width: 600px) {
+    bottom: -350px;
+    overflow-y: hidden;
+  }
 
   ul {
     display: flex;
@@ -42,7 +48,8 @@
   }
   .signature {
     margin-top: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     letter-spacing: 0.1rem;
     font-size: 0.7rem;
     border-top: 3px solid $color-3;

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  transition: 0.2s linear;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  margin: 15rem auto 0;
+  width: 90%;
+  height: 50%;
+  background: rgb(90, 203, 231);
+  background-attachment: fixed;
+  padding: 1rem 2rem 2rem;
+  box-shadow: 6px 6px 6px 6px #33333385;
+  border-radius: 10px;
+
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.img {
+  background: url(../../assets/images/banniere.jpg) top/cover;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 30rem;
+  width: 80%;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 60vh;
+    height: 50vh;
+    margin: 10rem auto 0;
+  }
+
+  .img {
+    height: 20vh;
+  }
+
+  p {
+    font-size: 0.4rem;
+  }
+
+  .toggle {
+    margin: 100px 0 auto;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.toggle {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  height: 26px;
+  width: 50px;
+  background: rgb(182, 182, 182);
+  padding: 5px 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 2px 1px 1px #333;
+}
+
+.label .ball {
+  background: #eee;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  transform: translateX(0px);
+  transition: transform 0.4s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(23px);
+}
+
+.fa.moon {
+  color: #333;
+}
+
+.dark {
+  background: #333;
+}
+
+.dark main {
+  background: #09fbba;
+  box-shadow: 6px 6px 6px 6px #8a878757;
+}
+
+.dark .label {
+  box-shadow: 2px 1px 1px #09fbba;
+  background: #888;
+}
+
+.dark .ball {
+  background: #09fbba;
+}
+.dark h1 {
+  color: #fff;
+}
