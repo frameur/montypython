@@ -42,7 +42,9 @@ const Footer = () => {
         </li>
       </ul>
       <div className="signature">
-        <p>François Copyright © {new Date().getFullYear()} </p>
+        <p className="copyright">
+          François Copyright © {new Date().getFullYear()}{" "}
+        </p>
       </div>
     </div>
   );

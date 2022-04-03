@@ -13,10 +13,15 @@ const Slider = () => {
       autoPlay
       interval={3000}
       infiniteLoop
-      thumbWidth={65}
+      showThumbs={null}
+      thumbWidth={0}
       showIndicators={false}
       showStatus={false}
     >
+      <div>
+        <img src="" alt="" /> <h1>slider's python</h1>
+        <p className="legend">Monty 0</p>
+      </div>
       <div>
         <img src={img1} alt="la troupe des monty python" />
         <p className="legend">Monty 1</p>

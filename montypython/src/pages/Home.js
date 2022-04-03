@@ -1,4 +1,5 @@
 import React from "react";
+import Darkmode from "../components/Darkmode";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Slider from "../components/Slider";
@@ -8,6 +9,7 @@ import Time2 from "../components/Time2";
 const Home = () => {
   return (
     <div>
+      <Darkmode />
       <Navigation />
       <Time1 />
       <Time2 />
