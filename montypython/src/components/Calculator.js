@@ -4,6 +4,7 @@ const Calculator = () => {
   const [result, setResult] = useState("");
 
   const updateCalc = (e) => {
+    // e.preventDefault();
     setResult(result.concat(e.target.value));
   };
 

@@ -19,7 +19,7 @@ const Slider = () => {
       showStatus={false}
     >
       <div>
-        <img src="" alt="" /> <h1>slider's python</h1>
+        <img src="" alt="" /> <h2>slider's python</h2>
         <p className="legend">Monty 0</p>
       </div>
       <div>

@@ -4,9 +4,13 @@
   left: 50%;
   transform: translate(-50%);
   width: 50rem;
-}
-@media (max-width: 600px) {
-  .sliderMonty {
+
+  @media (max-width: 1200px) {
+    width: 25rem;
+    top: 70%;
+  }
+
+  @media (max-width: 600px) {
     width: 20rem;
   }
 }
