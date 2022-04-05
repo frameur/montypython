@@ -13,13 +13,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/media" element={<Media />} />
         <Route path="/news" element={<News />} />
         <Route path="/pythonland" element={<Pythonland />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

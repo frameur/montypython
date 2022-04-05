@@ -26,6 +26,7 @@ const Calculator = () => {
               type="text"
               placeholder="0"
               value={result}
+              readOnly="readonly"
             />
 
             <span className="num clear">

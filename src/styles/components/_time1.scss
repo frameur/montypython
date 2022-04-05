@@ -48,10 +48,12 @@
 
       @keyframes anim {
         0% {
-          transform: translate(-200px);
+          transform: translate(-100px);
+          opacity: 0;
         }
         50% {
           transform: rotate(45deg);
+          opacity: 1;
         }
       }
     }
