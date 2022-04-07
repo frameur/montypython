@@ -1,24 +1,28 @@
 .counter-container {
   position: absolute;
-  top: 77%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%);
   color: $color-2;
 
   h2 {
     font-size: 2rem;
-    margin-bottom: -30px;
+    padding-bottom: -30px;
     font-weight: 700;
 
     @media screen and(max-width:1200px) {
       font-size: 1rem;
       position: relative;
-      margin-bottom: 25px;
+      margin-bottom: -40px;
+      display: flex;
+      justify-content: center;
     }
 
     @media screen and(max-width:600px) {
       font-size: 1rem;
-      margin-bottom: 20px;
+      margin-bottom: -40px;
+      position: relative;
+      display: flex;
     }
   }
 
@@ -26,14 +30,17 @@
     color: $color-2;
     font-size: 2em;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 55px;
 
     #stop,
     #start {
