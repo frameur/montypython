@@ -1,12 +1,13 @@
 .counter-container {
   position: absolute;
-  top: 68%;
+  top: 77%;
   left: 50%;
   transform: translate(-50%);
   color: $color-2;
 
   h2 {
     font-size: 2rem;
+    margin-bottom: -30px;
     font-weight: 700;
 
     @media screen and(max-width:1200px) {
@@ -38,6 +39,7 @@
       font-size: 0.9em;
       font-family: $font-1;
       text-transform: uppercase;
+      margin-top: -40px;
       height: 4rem;
       width: 4rem;
       border: 2px solid $color-2;
