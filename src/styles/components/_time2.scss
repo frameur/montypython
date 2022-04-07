@@ -21,9 +21,9 @@
     }
 
     @media screen and(max-width:600px) {
-      width: 8rem;
-      height: 8rem;
-      top: 0;
+      width: 10rem;
+      height: 10rem;
+      top: -150px;
     }
   }
 
@@ -36,7 +36,7 @@
     transform: rotate(var(--rotation));
     font-family: "rye";
     color: $color-3;
-    font-size: 1.5rem;
+    font-size: 100%;
     font-weight: bolder;
   }
 

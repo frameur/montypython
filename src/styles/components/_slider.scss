@@ -3,14 +3,15 @@
   top: 105%;
   left: 50%;
   transform: translate(-50%);
-  width: 50rem;
+  width: 45rem;
 
   @media (max-width: 1200px) {
-    width: 25rem;
-    top: 70%;
+    width: 50%;
+    top: 65%;
   }
 
   @media (max-width: 600px) {
-    width: 20rem;
+    width: 100%;
+    margin-top: -80px;
   }
 }

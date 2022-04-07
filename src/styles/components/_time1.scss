@@ -13,10 +13,12 @@
     @media screen and(max-width:1200px) {
       font-size: 1rem;
       position: relative;
+      margin-bottom: 25px;
     }
 
     @media screen and(max-width:600px) {
       font-size: 1rem;
+      margin-bottom: 20px;
     }
   }
 
@@ -62,6 +64,9 @@
   }
 
   @media screen and(max-width:1200px) {
-    top: 300px;
+    top: 380px;
+  }
+  @media screen and(max-width:600px) {
+    top: 350px;
   }
 }
