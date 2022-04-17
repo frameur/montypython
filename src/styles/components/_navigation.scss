@@ -76,8 +76,9 @@
       }
     }
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 930px) {
     visibility: hidden;
+    transition: 0.5s;
   }
 }
 h1 {
@@ -89,5 +90,144 @@ h1 {
 
   @media screen and (max-width: 600px) {
     font-size: 1rem;
+  }
+}
+
+//menu toggle responsive
+
+.navitoggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  transition: height 0.5s, width 0.5s;
+  transition-delay: 0s, 0.75s;
+  overflow: hidden;
+  visibility: hidden;
+
+  @media screen and (max-width: 900px) {
+    visibility: visible;
+    z-index: 10;
+    transition: 0.5s;
+  }
+}
+.navitoggle.active {
+  width: 300px;
+  height: 500px;
+  transition: width 0.5s, height 0.5s;
+  transition-delay: 0s, 0.75s;
+}
+.navitoggle .userBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.navitoggle.active .userBx {
+  width: calc(100% - 60px);
+  transition-delay: 0s;
+}
+.navitoggle .userBx .username {
+  white-space: nowrap;
+  color: #f00;
+}
+.navitoggle .userBx .imgBx {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background: #000;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+.navitoggle .userBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navitoggle .menuToggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navitoggle .menuToggle::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #555;
+  transform: translateY(-10px);
+  box-shadow: 0 10px #555;
+  transition: 0.5s;
+}
+.navitoggle .menuToggle::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #555;
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+.navitoggle.active .menuToggle::before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 #555;
+}
+.navitoggle.active .menuToggle::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+.menu {
+  position: absolute;
+  height: calc(100% - 60px);
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  .menu .lienToggle {
+    list-style: none;
+  }
+}
+
+.menu .lienToggle a {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #555;
+
+  &:hover {
+    color: #f00;
+  }
+}
+
+.menu .lienToggle a.imgIcon {
+  width: 35px;
+  height: 35px;
+  transition: 0.5s;
+
+  &:hover {
+    filter: sepia(80%);
+    transform: scale(0.9);
+  }
+  h3 {
+    padding-left: 50px;
   }
 }

@@ -6,11 +6,13 @@ import image3 from "../assets/images/monty3.gif";
 import image4 from "../assets/images/monty4.gif";
 import image5 from "../assets/images/monty5.gif";
 import image6 from "../assets/images/monty6.gif";
+import Navtoggle from "./Navtoggle";
 
 const Navigation = () => {
   return (
     <>
       <h1>monty python</h1>
+      <Navtoggle />
       <div className="navigation">
         <NavLink
           to="/"
