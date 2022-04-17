@@ -29,92 +29,55 @@ const Navtoggle = () => {
           <li className="lienToggle">
             <NavLink
               to="/"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image1})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>Home</h3>
+              <img className="imgIcon" src={image1} alt="" />
+              Home
             </NavLink>
           </li>
           <li className="lienToggle">
             <NavLink
               to="/media"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image2})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>Media</h3>
+              <img className="imgIcon" src={image2} alt="" />
+              Media
             </NavLink>
           </li>
           <li className="lienToggle">
             <NavLink
               to="/news"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image3})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>News</h3>
+              <img className="imgIcon" src={image3} alt="" />
+              News
             </NavLink>
           </li>
           <li className="lienToggle">
             <NavLink
               to="/pythonland"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image4})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>P'sland</h3>
+              <img className="imgIcon" src={image4} alt="" />
+              P'sland
             </NavLink>
           </li>
           <li className="lienToggle">
             <NavLink
               to="/shop"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image5})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>Shop</h3>
+              <img className="imgIcon" src={image5} alt="" />
+              Shop
             </NavLink>
           </li>
           <li className="lienToggle">
             <NavLink
               to="/works"
-              //   className={(nav) => (nav.isActive ? "nav-active" : "")}
-              className="imgIcon"
-              style={{
-                backgroundImage: `url(${image6})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
             >
-              <h3>Works</h3>
+              <img className="imgIcon" src={image6} alt="" />
+              Works
             </NavLink>
           </li>
           {/* <NavLink

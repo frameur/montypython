@@ -140,6 +140,7 @@ h1 {
 .navitoggle .userBx .username {
   white-space: nowrap;
   color: #f00;
+  font-size: 1.3rem;
 }
 .navitoggle .userBx .imgBx {
   position: relative;
@@ -203,6 +204,37 @@ h1 {
   .menu .lienToggle {
     list-style: none;
   }
+  .nav-active {
+    position: relative;
+    filter: sepia(80%);
+    transform: scale(0.8);
+    background: #e6c9c9;
+    box-shadow: 0px 8px 0px 8px #d84949af;
+
+    &::after {
+      content: "";
+      height: 5px;
+      width: 0;
+      background: $color-3;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-animation: anim 0.3s ease forwards;
+      animation: anim 0.6s ease forwards;
+
+      @-webkit-keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .menu .lienToggle a {
@@ -218,7 +250,7 @@ h1 {
   }
 }
 
-.menu .lienToggle a.imgIcon {
+.menu .lienToggle a .imgIcon {
   width: 35px;
   height: 35px;
   transition: 0.5s;
@@ -226,8 +258,5 @@ h1 {
   &:hover {
     filter: sepia(80%);
     transform: scale(0.9);
-  }
-  h3 {
-    padding-left: 50px;
   }
 }
