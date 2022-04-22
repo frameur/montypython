@@ -1,6 +1,7 @@
 import React from "react";
 import Darkmode from "../components/Darkmode";
-import Footer from "../components/Footer";
+import Form from "../components/Form";
+import Headerland from "../components/Headerland";
 import Navigation from "../components/Navigation";
 
 const Pythonland = () => {
@@ -8,7 +9,8 @@ const Pythonland = () => {
     <div className="container-bubble">
       <Darkmode />
       <Navigation />
-      <Footer />
+      <Headerland />
+      <Form />
     </div>
   );
 };

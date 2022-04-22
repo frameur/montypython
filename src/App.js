@@ -8,6 +8,7 @@ import Pythonland from "./pages/Pythonland";
 import Shop from "./pages/Shop";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
+import UserList from "./pages/UserList";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/news" element={<News />} />
         <Route path="/pythonland" element={<Pythonland />} />
+        <Route path="/mes-preferences" element={<UserList />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/works" element={<Works />} />
         <Route path="/about" element={<About />} />

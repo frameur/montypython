@@ -80,30 +80,6 @@ const Navtoggle = () => {
               Works
             </NavLink>
           </li>
-          {/* <NavLink
-        to="/about"
-        className={(nav) => (nav.isActive ? "nav-active" : "")}
-        style={{
-          backgroundImage: `url(${image1})`,
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <ul>
-          <li>About</li>
-        </ul>
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className={(nav) => (nav.isActive ? "nav-active" : "")}
-        style={{
-          backgroundImage: `url(${image1})`,
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <ul>
-          <li>Contact</li>
-        </ul>
-      </NavLink> */}
         </ul>
       </div>
     </div>

@@ -54,9 +54,6 @@ body {
   }
 }
 p {
-  padding: 30px 50px;
-  text-align: justify;
-
   @media screen and (max-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
