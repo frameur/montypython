@@ -75,21 +75,22 @@ const Card = ({ movie }) => {
   };
   const addStorage = () => {
     let storedData = window.localStorage.movies
-      ? window.localStorage.movies.split(",")
+      ? localStorage.movies.split("")
       : [];
 
     if (!storedData.includes(movie.id.toString())) {
       storedData.push(movie.id);
-      window.localStorage.movies = storedData;
+      localStorage.movies = storedData;
     }
   };
 
   const deleteStorage = () => {
-    let storedData = window.localStorage.movies.split(",");
+    let storedData = localStorage.movies.split(",");
 
-    let newData = storedData.filter((id) => id !== movie.id);
+    // eslint-disable-next-line eqeqeq
+    let newData = storedData.filter((id) => id != movie.id);
 
-    window.localStorage.movies = newData;
+    localStorage.movies = newData;
   };
   return (
     <div className="card">
