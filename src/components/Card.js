@@ -74,9 +74,7 @@ const Card = ({ movie }) => {
     return genreArray.map((genre) => <li key={genre}>{genre}</li>);
   };
   const addStorage = () => {
-    let storedData = window.localStorage.movies
-      ? localStorage.movies.split("")
-      : [];
+    let storedData = localStorage.movies ? localStorage.movies.split("") : [];
 
     if (!storedData.includes(movie.id.toString())) {
       storedData.push(movie.id);
