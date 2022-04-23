@@ -17,8 +17,8 @@ const Calculator = () => {
   };
 
   return (
-    <div>
-      <main className="main-calculator">
+    <main>
+      <div className="main-calculator">
         <div className="container-calculator">
           <form action="" className="calculator" name="calc">
             <input
@@ -86,8 +86,8 @@ const Calculator = () => {
             </span>
           </form>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 

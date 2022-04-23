@@ -9,9 +9,11 @@ const News = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <main className="main-news">
-        <h2>Python's calendar</h2>
-        <Picker />
+      <main>
+        <div className="main-news">
+          <h2>Python's calendar</h2>
+          <Picker />
+        </div>
       </main>
       <Footer />
     </div>

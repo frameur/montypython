@@ -11,8 +11,8 @@ import Navtoggle from "./Navtoggle";
 const Navigation = () => {
   return (
     <>
-      <h1>monty python</h1>
       <Navtoggle />
+      <h1>monty python</h1>
       <div className="navigation">
         <NavLink
           to="/"

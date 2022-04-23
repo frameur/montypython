@@ -9,7 +9,9 @@ const Media = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <Calculator />
+      <main>
+        <Calculator />
+      </main>
       <Footer />
     </div>
   );

@@ -28,7 +28,7 @@ class Picker extends Component {
 
   render() {
     return (
-      <div
+      <main
         style={{
           position: "relative",
           dispalyFlex: "flex",
@@ -78,7 +78,7 @@ class Picker extends Component {
             </p>
           </div>
         ) : null}
-      </div>
+      </main>
     );
   }
 }
