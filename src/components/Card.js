@@ -96,7 +96,7 @@ const Card = ({ movie }) => {
         src={
           movie.poster_path
             ? "https://image.tmdb.org/t/p/w500" + movie.poster_path
-            : "./img/poster.jpg"
+            : "../assets/images/poster.jpg"
         }
         alt="affiche film"
       />

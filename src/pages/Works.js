@@ -8,6 +8,7 @@ const Works = () => {
     <div>
       <Darkmode />
       <Navigation />
+      <section></section>
       <Footer />
     </div>
   );

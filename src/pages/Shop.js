@@ -8,6 +8,7 @@ const Shop = () => {
     <div>
       <Darkmode />
       <Navigation />
+      <section></section>
       <Footer />
     </div>
   );

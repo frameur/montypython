@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 import Headerland from "../components/Headerland";
 
 const UserList = () => {
@@ -21,18 +22,23 @@ const UserList = () => {
   }, []);
 
   return (
-    <div className="user-list-page">
-      <Headerland />
-      <h2>
-        Coup de coeur <span>💖</span>
-      </h2>
-      <div className="result">
-        {listData.length > 0 ? (
-          listData.map((movie) => <Card movie={movie} key={movie.id} />)
-        ) : (
-          <h2>Aucun coup de coeur pour le moment</h2>
-        )}
-      </div>
+    <div>
+      <section>
+        <div className="user-list-page">
+          <Headerland />
+          <h2>
+            Coup de coeur <span>💖</span>
+          </h2>
+          <div className="result">
+            {listData.length > 0 ? (
+              listData.map((movie) => <Card movie={movie} key={movie.id} />)
+            ) : (
+              <h2>Aucun coup de coeur pour le moment</h2>
+            )}
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };

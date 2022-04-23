@@ -11,11 +11,11 @@ const Home = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <main>
+      <section>
         <Time1 />
         <Time2 />
         <Slider />
-      </main>
+      </section>
       <Footer />
     </div>
   );

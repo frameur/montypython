@@ -6,11 +6,13 @@ import Navigation from "../components/Navigation";
 
 const Pythonland = () => {
   return (
-    <div className="container-bubble">
+    <div>
       <Darkmode />
       <Navigation />
-      <Headerland />
-      <Form />
+      <section>
+        <Headerland />
+        <Form />
+      </section>
     </div>
   );
 };

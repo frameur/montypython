@@ -9,12 +9,12 @@ const News = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <main>
+      <section>
         <div className="main-news">
           <h2>Python's calendar</h2>
           <Picker />
         </div>
-      </main>
+      </section>
       <Footer />
     </div>
   );

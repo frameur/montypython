@@ -17,77 +17,75 @@ const Calculator = () => {
   };
 
   return (
-    <main>
-      <div className="main-calculator">
-        <div className="container-calculator">
-          <form action="" className="calculator" name="calc">
-            <input
-              className="value"
-              type="text"
-              placeholder="0"
-              value={result}
-              readOnly="readonly"
-            />
+    <div className="main-calculator">
+      <div className="container-calculator">
+        <form action="" className="calculator" name="calc">
+          <input
+            className="value"
+            type="text"
+            placeholder="0"
+            value={result}
+            readOnly="readonly"
+          />
 
-            <span className="num clear">
-              <input type="button" value="C" onClick={deleleClear} />
-            </span>
-            <span className="num">
-              <input type="button" value="/" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="*" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="7" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="8" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="9" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="-" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="4" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="5" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="6" onClick={updateCalc} />
-            </span>
-            <span className="num plus">
-              <input type="button" value="+" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="1" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="2" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="3" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="0" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="00" onClick={updateCalc} />
-            </span>
-            <span className="num">
-              <input type="button" value="." onClick={updateCalc} />
-            </span>
+          <span className="num clear">
+            <input type="button" value="C" onClick={deleleClear} />
+          </span>
+          <span className="num">
+            <input type="button" value="/" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="*" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="7" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="8" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="9" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="-" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="4" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="5" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="6" onClick={updateCalc} />
+          </span>
+          <span className="num plus">
+            <input type="button" value="+" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="1" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="2" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="3" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="0" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="00" onClick={updateCalc} />
+          </span>
+          <span className="num">
+            <input type="button" value="." onClick={updateCalc} />
+          </span>
 
-            <span className="num equal">
-              <input type="button" value="=" onClick={calculate} />
-            </span>
-          </form>
-        </div>
+          <span className="num equal">
+            <input type="button" value="=" onClick={calculate} />
+          </span>
+        </form>
       </div>
-    </main>
+    </div>
   );
 };
 
