@@ -6,17 +6,18 @@
     letter-spacing: 2px;
   }
   nav {
-    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     top: 100px;
     left: 16px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 5px;
-
+      li {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
       a {
         text-decoration: none;
         color: $white;
