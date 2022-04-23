@@ -4,7 +4,7 @@ body {
 }
 .main-news {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 40% 60%;
   margin: 20% auto 0;
   max-width: 50%;
   height: 35rem;
@@ -76,7 +76,7 @@ h2 {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   @media (max-width: 1200px) {
     font-size: 100%;
