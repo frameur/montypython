@@ -13,7 +13,7 @@ const Darkmode = () => {
     <div>
       <div className="toggle">
         <input type="checkbox" className="checkbox" id="dark-mode" />
-        <label for="dark-mode" className="label">
+        <label htmlFor="dark-mode" className="label">
           <i className="fas fa-moon"></i>
           <i className="fas fa-sun"></i>
           <div className="ball"></div>
