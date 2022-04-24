@@ -51,12 +51,15 @@
 
 .dark {
   background: #333;
+  li {
+    color: #fff;
+  }
 }
 
-// .dark main {
-//   background: #09fbba;
-//   box-shadow: 6px 6px 6px 6px #8a878757;
-// }
+.dark main {
+  background: #09fbba;
+  box-shadow: 6px 6px 6px 6px #8a878757;
+}
 
 .dark .label {
   box-shadow: 2px 1px 1px #09fbba;
