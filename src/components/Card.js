@@ -75,7 +75,7 @@ const Card = ({ movie }) => {
   };
   const addStorage = () => {
     let storedData = window.localStorage.movies
-      ? window.localStorage.movies.split("")
+      ? window.localStorage.movies.split(",")
       : [];
 
     if (!storedData.includes(movie.id.toString())) {
