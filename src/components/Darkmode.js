@@ -12,12 +12,7 @@ const Darkmode = () => {
   return (
     <div>
       <div className="toggle">
-        <input
-          type="checkbox"
-          className="checkbox"
-          id="dark-mode"
-          rel="noreferrer"
-        />
+        <input type="checkbox" className="checkbox" id="dark-mode" />
         <label for="dark-mode" className="label">
           <i className="fas fa-moon"></i>
           <i className="fas fa-sun"></i>

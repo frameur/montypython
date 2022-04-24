@@ -15,14 +15,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/media" element={<Media />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/pythonland" element={<Pythonland />} />
-        <Route path="/mes-preferences" element={<UserList />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="/media" element={<Media />} />
+        <Route exact path="/news" element={<News />} />
+        <Route exact path="/pythonland" element={<Pythonland />} />
+        <Route exact path="/mes-preferences" element={<UserList />} />
+        <Route exact path="/shop" element={<Shop />} />
+        <Route exact path="/works" element={<Works />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

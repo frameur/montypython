@@ -53,6 +53,9 @@
   background: #333;
   li {
     color: #fff;
+    &:hover {
+      color: red;
+    }
   }
 }
 

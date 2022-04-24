@@ -9,9 +9,9 @@ import Time2 from "../components/Time2";
 const Home = () => {
   return (
     <div>
-      <Darkmode />
+      
       <Navigation />
-      <section>
+      <section><Darkmode />
         <Time1 />
         <Time2 />
         <Slider />
