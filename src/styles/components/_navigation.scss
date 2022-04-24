@@ -9,7 +9,6 @@
   left: 50%;
   transform: translate(-50%);
   margin: 40px 0 0 0;
-  // position: fixed;
   z-index: 10;
 
   .nav-active {
@@ -76,7 +75,7 @@
       }
     }
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 1000px) {
     visibility: hidden;
     transition: 0.5s;
   }
@@ -110,10 +109,14 @@ h1 {
   overflow: hidden;
   visibility: hidden;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 980px) {
     visibility: visible;
     z-index: 100;
     transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: translate(-50%);
   }
 }
 .navitoggle.active {
@@ -140,7 +143,8 @@ h1 {
 .navitoggle .userBx .username {
   white-space: nowrap;
   color: #f00;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  margin-left: 20px;
 }
 .navitoggle .userBx .imgBx {
   position: relative;

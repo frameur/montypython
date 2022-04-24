@@ -1,21 +1,19 @@
 .socialNetwork {
-  position: absolute;
-  left: 50%;
   height: 20vh;
-  transform: translate(-50%);
   background: #948f8f;
-  width: 100%;
   opacity: 70%;
-  overflow-y: hidden;
+  overflow: hidden;
+  width: 100%;
 
   @media screen and (max-width: 1200px) {
-    bottom: -100px;
+    // bottom: -100px;
     width: 100%;
+    overflow-x: hidden;
   }
 
   @media screen and (max-width: 600px) {
-    bottom: -190px;
-    overflow-y: hidden;
+    // bottom: -190px;
+    overflow-x: hidden;
   }
 
   ul {

@@ -1,6 +1,6 @@
 import React from "react";
 import Darkmode from "../components/Darkmode";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Slider from "../components/Slider";
 import Time1 from "../components/Time1";
@@ -16,7 +16,7 @@ const Home = () => {
         <Time2 />
         <Slider />
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
