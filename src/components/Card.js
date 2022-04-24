@@ -74,21 +74,23 @@ const Card = ({ movie }) => {
     return genreArray.map((genre) => <li key={genre}>{genre}</li>);
   };
   const addStorage = () => {
-    let storedData = localStorage.movies ? localStorage.movies.split("") : [];
+    let storedData = window.localStorage.movies
+      ? window.localStorage.movies.split("")
+      : [];
 
     if (!storedData.includes(movie.id.toString())) {
       storedData.push(movie.id);
-      localStorage.movies = storedData;
+      window.localStorage.movies = storedData;
     }
   };
 
   const deleteStorage = () => {
-    let storedData = localStorage.movies.split(",");
+    let storedData = window.localStorage.movies.split(",");
 
     // eslint-disable-next-line eqeqeq
     let newData = storedData.filter((id) => id != movie.id);
 
-    localStorage.movies = newData;
+    window.localStorage.movies = newData;
   };
   return (
     <div className="card">
