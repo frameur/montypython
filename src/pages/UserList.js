@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import Darkmode from "../components/Darkmode";
 import Footer from "../components/Footer";
 import Headerland from "../components/Headerland";
 
@@ -23,6 +24,7 @@ const UserList = () => {
 
   return (
     <div>
+      <Darkmode />
       <section>
         <div className="user-list-page">
           <Headerland />
