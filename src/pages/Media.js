@@ -1,7 +1,7 @@
 import React from "react";
 import Calculator from "../components/Calculator";
 import Darkmode from "../components/Darkmode";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 
 const Media = () => {
@@ -12,7 +12,7 @@ const Media = () => {
       <section>
         <Calculator />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

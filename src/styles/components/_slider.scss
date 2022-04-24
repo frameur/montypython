@@ -1,6 +1,6 @@
 .sliderMonty {
   position: absolute;
-  top: 105%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%);
   width: 45rem;
@@ -8,6 +8,7 @@
   @media (max-width: 1200px) {
     width: 80%;
     top: 50%;
+    visibility: hidden;
   }
 
   @media (max-width: 600px) {

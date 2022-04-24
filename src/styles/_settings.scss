@@ -18,8 +18,8 @@ $white: #ddd;
 $black: #333;
 
 @mixin verticalCenter {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   // align-items: center;
 }
 
@@ -41,7 +41,7 @@ body {
   overflow-x: hidden;
 
   @media screen and (max-width: 600px) {
-    height: 70vh;
+    height: 100vh;
   }
 
   // @include verticalCenter;
@@ -51,8 +51,8 @@ li {
   list-style-type: none;
 }
 section {
-  height: 150vh;
-  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .result {
   display: flex;
