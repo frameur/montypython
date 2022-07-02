@@ -4,8 +4,6 @@
   left: 50%;
   transform: translate(-50%);
 
-  // transform: translate(-30%);
-
   .clock {
     width: 17rem;
     height: 17rem;
@@ -39,7 +37,7 @@
     height: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
-    font-family: "rye";
+    font-family: 'rye';
     color: $color-3;
     font-size: 100%;
     font-weight: bolder;
@@ -103,7 +101,7 @@
   }
 
   .clock::after {
-    content: "";
+    content: '';
     position: absolute;
     background: $color-2;
     z-index: 11;
