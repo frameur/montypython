@@ -19,7 +19,7 @@
     box-shadow: 0px 8px 0px 8px #d84949af;
 
     &::after {
-      content: "";
+      content: '';
       height: 5px;
       width: 0;
       background: $color-3;
@@ -173,7 +173,7 @@ h1 {
   align-items: center;
 }
 .navitoggle .menuToggle::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 32px;
   height: 2px;
@@ -183,7 +183,7 @@ h1 {
   transition: 0.5s;
 }
 .navitoggle .menuToggle::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 32px;
   height: 2px;
@@ -216,7 +216,7 @@ h1 {
     box-shadow: 0px 8px 0px 8px #d84949af;
 
     &::after {
-      content: "";
+      content: '';
       height: 5px;
       width: 0;
       background: $color-3;
