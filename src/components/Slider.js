@@ -1,10 +1,10 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import img1 from "../assets/images/montytroup.jpg";
-import img2 from "../assets/images/sacregraal.jpg";
-import img3 from "../assets/images/img3.jpg";
-import img4 from "../assets/images/banniere.jpg";
+import React from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import { Carousel } from 'react-responsive-carousel'
+import img1 from '../assets/images/montytroup.jpg'
+import img2 from '../assets/images/sacregraal.jpg'
+import img3 from '../assets/images/img3.jpg'
+import img4 from '../assets/images/banniere.jpg'
 
 const Slider = () => {
   return (
@@ -20,7 +20,8 @@ const Slider = () => {
         showStatus={false}
       >
         <div>
-          <img src="" alt="" /> <h2>slider's python</h2>
+          <img src="" alt="la troupe des monty python" />{' '}
+          <h2>slider's python</h2>
           <p className="legend">Monty 0</p>
         </div>
         <div>
@@ -41,7 +42,7 @@ const Slider = () => {
         </div>
       </Carousel>
     </div>
-  );
-};
+  )
+}
 
-export default Slider;
+export default Slider
