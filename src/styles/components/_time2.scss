@@ -1,13 +1,13 @@
 .container {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%);
 
   .clock {
     width: 17rem;
     height: 17rem;
-    background: url(../../assets/images/img4.jpg) center/cover;
+    background: url(../../assets/images/holygraal.jpg) center/contain;
     border-radius: 50%;
     border: 10px solid $color-2;
     box-shadow: 0px 9px 9px 0px #ff0000c4;

@@ -1,6 +1,4 @@
 import React from 'react'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-// import { Carousel } from 'react-responsive-carousel'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper'
 import 'swiper/css'

@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div>
       <Navigation />
+      <Darkmode />
       <section className="content">
-        <Darkmode />
         <div className="time1">
           <Time1 />
         </div>

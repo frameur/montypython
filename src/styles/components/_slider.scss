@@ -1,7 +1,7 @@
 .swiper {
   width: 100%;
   height: 100%;
-  margin-top: -300px;
+  margin-top: -250px;
   margin-bottom: 150px;
   border-radius: 18px;
 }
@@ -16,6 +16,53 @@
   background-position: center;
   background-size: cover;
 }
+.swiper-button-prev {
+  position: absolute;
+  margin: 0 auto;
+  font-weight: 900;
+  background: url(../../assets/images/King-arthur-icon.png) center/contain;
+  left: 12%;
+  border: 3px solid #ff0000;
+  color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next {
+  font-weight: 900;
+  height: 20px;
+  background: url(../../assets/images/King-arthur-2-icon.png) center/contain;
+  margin: 0 auto;
+  position: absolute;
+  right: 12%;
+  border: 3px solid #ff0000;
+  color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.swiper-pagination-bullet {
+  height: 40px;
+  width: 40px;
+  background: rgb(81, 0, 255);
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  height: 40px;
+  width: 40px;
+  background: url(../../assets/images/God-grail-icon.png) center/contain;
+  opacity: 1;
+}
 .swiper-slide img {
   display: block;
   border-radius: 15px;
@@ -25,26 +72,25 @@ h2.nameTroup {
   position: relative;
   display: flex;
   padding: 0px 30px 30px;
-  color: crimson;
+  color: $color-2;
 }
 span.titleMembers {
-  color: rgb(114, 76, 84);
+  color: $white;
 }
-.sliderMonty {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 45rem;
-
+.swiper {
   @media (max-width: 1200px) {
     width: 80%;
+    top: 100%;
+    position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
     visibility: hidden;
   }
 
   @media (max-width: 600px) {
     width: 100%;
-    margin-top: 140px;
+    // margin-top: 140px;
   }
 }
