@@ -77,12 +77,10 @@ h2.nameTroup {
 span.titleMembers {
   color: $white;
 }
-.swiper {
+.swiper.slide {
   @media (max-width: 1200px) {
-    width: 80%;
-    top: 100%;
     position: absolute;
-    top: 50%;
+    top: 600px;
     left: 50%;
     transform: translate(-50%);
 
