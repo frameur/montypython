@@ -18,10 +18,8 @@ const Home = () => {
         <div className="time2">
           <Time2 />
         </div>
-        <div className="slider">
-          <Slider />
-        </div>
       </section>
+      <Slider />
       <Footer />
     </div>
   )
