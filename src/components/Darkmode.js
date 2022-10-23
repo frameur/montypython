@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react'
 
 const Darkmode = () => {
   useEffect(() => {
-    const darlMode = document.getElementById("dark-mode");
+    const darlMode = document.querySelector('.checkbox')
 
-    darlMode.addEventListener("change", () => {
-      document.body.classList.toggle("dark");
-    });
-  }, []);
+    darlMode.addEventListener('change', () => {
+      document.body.classList.toggle('dark')
+    })
+  }, [])
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Darkmode = () => {
         </label>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Darkmode;
+export default Darkmode
