@@ -1,7 +1,7 @@
 import React from 'react'
 import Darkmode from '../components/Darkmode'
-import Form from '../components/Form'
-import Headerland from '../components/Headerland'
+import Footer from '../components/Footer'
+
 import Navigation from '../components/Navigation'
 
 const Pythonland = () => {
@@ -9,10 +9,8 @@ const Pythonland = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <section className="moviescard">
-        <Headerland />
-        <Form />
-      </section>
+      <section></section>
+      <Footer />
     </div>
   )
 }

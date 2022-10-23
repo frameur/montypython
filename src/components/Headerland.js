@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Headerland = () => {
   return (
@@ -8,22 +8,22 @@ const Headerland = () => {
         <ul>
           <NavLink
             to="/mes-preferences"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className={(nav) => (nav.isActive ? 'nav-active' : '')}
           >
             <li>Mes préferences</li>
           </NavLink>
           <NavLink
-            to="/pythonland"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            to="/media"
+            className={(nav) => (nav.isActive ? 'nav-active' : '')}
           >
             <ul>
-              <li>P'sland</li>
+              <li>media</li>
             </ul>
           </NavLink>
         </ul>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Headerland;
+export default Headerland

@@ -111,7 +111,7 @@ const Slider = () => {
       </Swiper>
       <h2 className="nameTroup">
         <span className="titleMembers">Former Members </span>
-        Graham Chapman, John Cleese, Eric Idle, Michael Palin,Terry Gillian,
+        Graham Chapman, John Cleese, Eric Idle, Michael Palin, Terry Gillian,
         Terry Jones,
         <br /> Monty Python <br /> Monty Python's Flying Circus.
       </h2>
