@@ -5,16 +5,16 @@
   overflow: hidden;
   width: 100%;
 
-  @media screen and (max-width: 1200px) {
-    // bottom: -100px;
-    width: 100%;
+  @media (max-width: 1200px) {
+    min-width: 100%;
     overflow-x: hidden;
   }
 
-  @media screen and (max-width: 600px) {
-    bottom: 400px;
+  @media (max-width: 600px) {
+    margin-bottom: 200px;
     overflow-x: hidden;
-    height: 15vh;
+    height: 20vh;
+    width: 100%;
   }
 
   ul {
