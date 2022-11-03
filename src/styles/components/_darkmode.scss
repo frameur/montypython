@@ -50,7 +50,8 @@
 }
 
 .dark {
-  background: url(../../assets/images/fond_dark3.jpg) center/cover;
+  background: url(../../assets/images/fond_dark1.jpg) top center/contain;
+
   li {
     color: #fff;
     &:hover {
