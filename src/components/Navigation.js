@@ -1,12 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import image1 from "../assets/images/monty1.gif";
-import image2 from "../assets/images/monty2.gif";
-import image3 from "../assets/images/monty3.gif";
-import image4 from "../assets/images/monty4.gif";
-import image5 from "../assets/images/monty5.gif";
-import image6 from "../assets/images/monty6.gif";
-import Navtoggle from "./Navtoggle";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import image1 from '../assets/images/monty1.webp'
+import image2 from '../assets/images/monty2.webp'
+import image3 from '../assets/images/monty3.webp'
+import image4 from '../assets/images/monty4.webp'
+import image5 from '../assets/images/monty5.webp'
+import image6 from '../assets/images/monty6.webp'
+import Navtoggle from './Navtoggle'
 
 const Navigation = () => {
   return (
@@ -16,10 +16,10 @@ const Navigation = () => {
       <div className="navigation">
         <NavLink
           to="/"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image1})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -29,10 +29,10 @@ const Navigation = () => {
 
         <NavLink
           to="/media"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image2})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -41,10 +41,10 @@ const Navigation = () => {
         </NavLink>
         <NavLink
           to="/news"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image3})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -53,10 +53,10 @@ const Navigation = () => {
         </NavLink>
         <NavLink
           to="/pythonland"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image4})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -65,10 +65,10 @@ const Navigation = () => {
         </NavLink>
         <NavLink
           to="/shop"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image5})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -77,10 +77,10 @@ const Navigation = () => {
         </NavLink>
         <NavLink
           to="/works"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}
           style={{
             backgroundImage: `url(${image6})`,
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <ul>
@@ -89,7 +89,7 @@ const Navigation = () => {
         </NavLink>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
