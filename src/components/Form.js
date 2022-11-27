@@ -25,7 +25,7 @@ const Form = () => {
             id="search-input"
             onChange={(e) => setSearch(e.target.value)}
           />
-          <input type="submit" value="Rechercher" />
+          {/* <input type="submit" value="Rechercher" /> */}
         </form>
 
         <div className="btn-sort-container">
