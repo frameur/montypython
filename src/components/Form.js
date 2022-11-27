@@ -47,7 +47,7 @@ const Form = () => {
       </div>
       <div className="result">
         {moviesData
-          .slice(0, 12)
+          .slice(0, 10)
           // eslint-disable-next-line array-callback-return
           .sort((a, b) => {
             if (sortGoodBad === 'goodToBad') {
