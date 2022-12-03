@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Card from './Card'
+import Card2 from './Card2'
 
 const Form = () => {
   const [moviesData, setMoviesData] = useState([])
@@ -57,7 +57,7 @@ const Form = () => {
             }
           })
           .map((movie) => (
-            <Card key={movie.id} movie={movie} />
+            <Card2 key={movie.id} movie={movie} />
           ))}
       </div>
     </div>
