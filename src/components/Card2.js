@@ -108,12 +108,11 @@ const Card = ({ movie }) => {
       <div className="details">
         <h2>{movie.title}</h2>
         <div className="rating">
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <i className="fa-regular fa-star"></i>
-          <span>{movie.vote_average / 2}/5 </span>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            {movie.vote_average / 2}
+            /5
+          </span>
         </div>
         <div className="tags">
           {movie.genre_ids
