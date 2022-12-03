@@ -34,14 +34,14 @@ const Form = () => {
             id="goodToBad"
             onClick={() => setSortGoodBad('goodToBad')}
           >
-            Top<span>➜</span>
+            Best<span>➜</span>
           </div>
           <div
             className="btn-sort"
             id="badToGood"
             onClick={() => setSortGoodBad('badToGood')}
           >
-            Flop<span>➜</span>
+            Bad<span>➜</span>
           </div>
         </div>
       </div>
