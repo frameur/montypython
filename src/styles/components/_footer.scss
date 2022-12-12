@@ -4,6 +4,8 @@
   opacity: 70%;
   overflow: hidden;
   width: 100%;
+  position: relative;
+  bottom: 0px;
 
   @media (max-width: 1200px) {
     min-width: 100%;
@@ -59,10 +61,12 @@
 
     .copyright {
       flex: 1 1 1;
-      color: $color-7;
+      color: $color-4;
       margin-bottom: 1rem;
       font-size: 120%;
       font-weight: 700;
+      position: absolute;
+      bottom: 0px;
 
       @media screen and (max-width: 1200px) {
         position: absolute;
@@ -81,7 +85,7 @@
       }
 
       &:hover {
-        color: $color-8;
+        color: $color-2;
       }
     }
   }
