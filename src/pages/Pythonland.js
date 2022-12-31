@@ -1,4 +1,5 @@
 import React from 'react'
+import Animatedcircular from '../components/Animatedcircular'
 import Darkmode from '../components/Darkmode'
 import Footer from '../components/Footer'
 
@@ -9,7 +10,9 @@ const Pythonland = () => {
     <div>
       <Darkmode />
       <Navigation />
-      <section></section>
+      <section>
+        <Animatedcircular />
+      </section>
       <Footer />
     </div>
   )
