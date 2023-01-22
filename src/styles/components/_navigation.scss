@@ -119,6 +119,10 @@ h1 {
     left: 50%;
     transform: translate(-50%);
   }
+
+  @media (max-width: 600px) {
+    z-index: 1000;
+  }
 }
 .navitoggle.active {
   width: 300px;
@@ -138,7 +142,7 @@ h1 {
   transition-delay: 0.5s;
 }
 .navitoggle.active .userBx {
-  width: calc(100% - 60px);
+  width: calc(100% - 50px);
   transition-delay: 0s;
 }
 .navitoggle .userBx .username {

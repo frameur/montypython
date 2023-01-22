@@ -6,10 +6,23 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 200px;
+    height: 250px;
+  }
 }
 .cards .poster {
   position: relative;
   overflow: hidden;
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 250px;
+  }
 }
 .cards .poster::before {
   content: '';
@@ -108,6 +121,7 @@
     margin-top: -12px;
     font-size: 0.7rem;
     width: 120%;
+    display: none;
   }
 }
 .cards .details .info h5 {

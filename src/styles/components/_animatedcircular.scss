@@ -2,7 +2,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 130vh;
+
+  @media (max-width: 600px) {
+    height: 80vh;
+  }
 }
 
 .containercircular {
@@ -11,6 +15,11 @@ section {
   height: 600px;
   border: 2px solid #fff;
   border-radius: 50%;
+
+  @media (max-width: 600px) {
+    width: 345px;
+    height: 345px;
+  }
 }
 .containercircular .icon {
   position: relative;
@@ -34,6 +43,12 @@ section {
   transform-origin: 340px;
   z-index: 100;
   overflow: hidden;
+
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 50px;
+    transform-origin: 195px;
+  }
 }
 .containercircular .icon .imgBx.active {
   box-shadow: 0 0 0 4px #222, 0 0 0 10px #ff1d50;
@@ -137,6 +152,11 @@ section {
   box-shadow: -1px 15px 78px -5px rgba(223, 224, 29, 0.52);
   -webkit-box-shadow: -1px 15px 78px -5px rgba(223, 224, 29, 0.52);
   -moz-box-shadow: -1px 15px 78px -5px rgba(223, 224, 29, 0.52);
+
+  @media (max-width: 600px) {
+    width: 125px;
+    height: 160px;
+  }
 }
 .contentBx .card .imgBx img {
   position: absolute;
@@ -145,6 +165,11 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: 600px) {
+    width: 125px;
+    height: 160px;
+  }
 }
 .contentBx .card .textBx {
   display: flex;
@@ -160,12 +185,20 @@ section {
   line-height: 1rem;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 0.75rem;
+  }
 }
 .contentBx .card .textBx span {
   font-size: 0.65rem;
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.1rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.45rem;
+  }
 }
 .contentBx .card .textBx .sci {
   position: relative;
