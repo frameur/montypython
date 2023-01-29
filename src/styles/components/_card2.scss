@@ -157,7 +157,7 @@
   font-size: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  padding: 14px 0;
+  padding: 10px 0;
   width: 150px;
   text-align: center;
   border-radius: 15px;
@@ -166,8 +166,12 @@
   z-index: 50;
   user-select: none;
 
+  @media (max-width: 600px) {
+    width: 100px;
+  }
+
   &:hover {
-    background: #212040;
+    // background: #212040;
     box-shadow: 0 0 10px #546ee4d2;
     font-size: 0.6rem;
     color: $white;

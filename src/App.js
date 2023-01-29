@@ -1,14 +1,14 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Media from "./pages/Media";
-import News from "./pages/News";
-import Pythonland from "./pages/Pythonland";
-import UserList from "./pages/UserList";
-import Shop from "./pages/Shop";
-import Works from "./pages/Works";
-import Contact from "./pages/Contact";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Media from './pages/Media'
+import News from './pages/News'
+import Pythonland from './pages/Pythonland'
+import UserList from './pages/UserList'
+import Shop from './pages/Shop'
+import Works from './pages/Works'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

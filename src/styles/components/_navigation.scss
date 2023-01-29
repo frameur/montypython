@@ -9,7 +9,8 @@
   left: 50%;
   transform: translate(-50%);
   margin: 40px 0 0 0;
-  z-index: 10;
+  position: fixed;
+  z-index: 100;
 
   .nav-active {
     position: relative;

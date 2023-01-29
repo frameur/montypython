@@ -10,7 +10,7 @@ const Form = () => {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=7da52767b907afa2fc1a26fa44ff20c5&query=${search}&language=fr-FR`
+        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${search}&language=fr-FR`
       )
       .then((res) => setMoviesData(res.data.results))
   }, [search])
@@ -47,7 +47,7 @@ const Form = () => {
       </div>
       <div className="result">
         {moviesData
-          .slice(0, 8)
+          .slice(2, 10)
           // eslint-disable-next-line array-callback-return
           .sort((a, b) => {
             if (sortGoodBad === 'goodToBad') {

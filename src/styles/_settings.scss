@@ -30,9 +30,6 @@ $black: #333;
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  height: -webkit-fill-available;
-}
 
 body {
   background: url(../assets/images/fondprincipe2.jpg) center/cover;
@@ -42,7 +39,6 @@ body {
   min-height: 100%;
   font-family: $font-1;
   overflow-x: hidden;
-  height: -webkit-fill-available;
 
   @media (max-width: 600px) {
     width: 100%;
@@ -67,6 +63,7 @@ section {
   overflow-x: hidden !important;
 }
 .result {
+  grid-auto-rows: 240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

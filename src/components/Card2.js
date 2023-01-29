@@ -137,7 +137,7 @@ const Card = ({ movie }) => {
 
       {movie.genre_ids ? (
         <div className="btn" onClick={() => addStorage()}>
-          Ajouter à mes préferences
+          coup de coeur
         </div>
       ) : (
         <div
@@ -147,7 +147,7 @@ const Card = ({ movie }) => {
             window.location.reload()
           }}
         >
-          Supprimer de la liste
+          Supprimer
         </div>
       )}
     </div>
