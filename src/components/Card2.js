@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import CustomPagination from '../components/Pagination'
 
 const Card = ({ movie }) => {
   const dateFormater = (date) => {
     let [yy, mm, dd] = date.split('-')
     return [dd, mm, yy].join('/')
   }
+  const [page, setPage] = useState(1)
+  const [numOfPages, setNumOfPages] = useState(0)
+
+  // Calculate the number of items per page and the starting and ending indexes for the current page
+  const itemsPerPage = 10
+  const startIndex = (page - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
 
   const genreFinder = () => {
     let genreArray = []
@@ -92,6 +100,14 @@ const Card = ({ movie }) => {
 
     window.localStorage.movies = newData
   }
+  useEffect(() => {
+    // Calculate the total number of pages based on the number of items per page
+    if (movie.genre_ids) {
+      setNumOfPages(Math.ceil(movie.genre_ids.length / itemsPerPage))
+    } else if (movie.genres) {
+      setNumOfPages(Math.ceil(movie.genres.length / itemsPerPage))
+    }
+  }, [movie, itemsPerPage])
   return (
     <div className="cards">
       <div className="poster">
@@ -115,14 +131,12 @@ const Card = ({ movie }) => {
           </span>
         </div>
         <div className="tags">
+          {/* Use slice to only show the genres for the current page */}
           {movie.genre_ids
-            ? genreFinder()
-            : movie.genres.map((genre, index) => (
-                <span>
-                  key={index}
-                  {genre.name}
-                </span>
-              ))}
+            ? genreFinder().slice(startIndex, endIndex)
+            : movie.genres
+                .map((genre, index) => <span key={index}>{genre.name}</span>)
+                .slice(startIndex, endIndex)}
         </div>
         <div className="info">
           {movie.overview ? <h3>Synopsis</h3> : ''}
@@ -149,6 +163,10 @@ const Card = ({ movie }) => {
         >
           Supprimer
         </div>
+      )}
+      {/* la pagination */}
+      {numOfPages > 1 && (
+        <CustomPagination setPage={setPage} numOfPages={numOfPages} />
       )}
     </div>
   )

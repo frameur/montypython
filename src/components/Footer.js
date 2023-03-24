@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Footer = () => {
   return (
@@ -43,11 +43,11 @@ const Footer = () => {
       </ul>
       <div className="signature">
         <p className="copyright">
-          François Copyright © {new Date().getFullYear()}{" "}
+          François Copyright © 2021 - {new Date().getFullYear()}{' '}
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
